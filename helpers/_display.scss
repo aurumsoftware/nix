@@ -1,0 +1,31 @@
+.#{$prefix}display__none { display: none !important; }
+.#{$prefix}display__inline { display: inline !important; }
+.#{$prefix}display__inline-block { display: inline-block !important; }
+.#{$prefix}display__block { display: block !important; }
+.#{$prefix}display__table { display: table !important; }
+.#{$prefix}display__table-cell { display: table-cell !important; }
+.#{$prefix}display__table-row { display: table-row !important; }
+.#{$prefix}display__flex { display: flex !important; }
+.#{$prefix}display__inline-flex { display: inline-flex !important; }
+.#{$prefix}overflow__auto { overflow: auto !important; }
+.#{$prefix}overflow__visible { overflow: visible !important; }
+.#{$prefix}overflow__hidden { overflow: hidden !important; }
+.#{$prefix}overflow__scroll { overflow: scroll !important; }
+
+@for $i from 1 through length($breakpoints) {
+  @media(max-width: nth($breakpoints, $i)){
+    .#{$prefix}display__none--#{nth($suffix, $i)} { display: none !important; }
+    .#{$prefix}display__inline--#{nth($suffix, $i)} { display: inline !important; }
+    .#{$prefix}display__inline-block--#{nth($suffix, $i)} { display: inline-block !important; }
+    .#{$prefix}display__block--#{nth($suffix, $i)} { display: block !important; }
+    .#{$prefix}display__table--#{nth($suffix, $i)} { display: table !important; }
+    .#{$prefix}display__table-cell--#{nth($suffix, $i)} { display: table-cell !important; }
+    .#{$prefix}display__table-row--#{nth($suffix, $i)} { display: table-row !important; }
+    .#{$prefix}display__flex--#{nth($suffix, $i)} { display: flex !important; }
+    .#{$prefix}display__inline-flex--#{nth($suffix, $i)} { display: inline-flex !important; }
+    .#{$prefix}overflow__auto--#{nth($suffix, $i)} { overflow: auto !important; }
+    .#{$prefix}overflow__visible--#{nth($suffix, $i)} { overflow: visible !important; }
+    .#{$prefix}overflow__hidden--#{nth($suffix, $i)} { overflow: hidden !important; }
+    .#{$prefix}overflow__scroll--#{nth($suffix, $i)} { overflow: scroll !important; }
+  }
+}

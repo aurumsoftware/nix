@@ -1,0 +1,30 @@
+@mixin pos-top() {
+  bottom: initial !important;
+  top: 0 !important;
+}
+@mixin pos-bottom() {
+  top: initial !important;
+  bottom: 0 !important;
+}
+@mixin pos-left() {
+  right: initial !important;
+  left: 0 !important;
+}
+@mixin pos-right() {
+  left: initial !important;
+  right: 0 !important;
+}
+
+.#{$prefix}left {  @include pos-left() }
+.#{$prefix}right { @include pos-right() }
+.#{$prefix}top { @include pos-top() }
+.#{$prefix}bottom { @include pos-bottom() }
+
+@for $i from 1 through length($breakpoints) {
+  @media(max-width: nth($breakpoints, $i)){
+    .#{$prefix}left--#{nth($suffix, $i)} { @include pos-left() }
+    .#{$prefix}right--#{nth($suffix, $i)} { @include pos-right() }
+    .#{$prefix}top--#{nth($suffix, $i)} { @include pos-top() }
+    .#{$prefix}bottom--#{nth($suffix, $i)} { @include pos-bottom() }
+  }
+}

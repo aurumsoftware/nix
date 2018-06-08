@@ -1,0 +1,14 @@
+/* Prefix & suffix */
+$prefix: 'au-' !default; // init your class with this prefix
+
+/* Breakpoints */
+$lg: 1400px !default;
+$md: 1200px !default;
+$sm: 1024px !default;
+$xs: 768px !default;
+$breakpoints: $lg, $md, $sm, $xs;
+$suffix: 'lg', 'md', 'sm', 'xs'; // breakpoints suffix
+
+/* Interval sizes by px */
+$int-size: 5 !default; // interval (eg: 5, 10, 15, 20...)
+$max-size: 100 !default; // max size
