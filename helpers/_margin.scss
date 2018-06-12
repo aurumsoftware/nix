@@ -16,7 +16,7 @@ $countResponsive: 0;
 
 @while $countResponsive <= $max-size { 
   @for $o from 1 through length($breakpoints) {
-    @media(max-width: nth($breakpoints, $o)){
+    @media(min-width: nth($breakpoints, $o)){
       .#{$prefix}margin-auto--#{nth($suffix, $o)} { margin: 0 auto !important }
       .#{$prefix}margin__#{$countResponsive}--#{nth($suffix, $o)} { margin: $countResponsive+px !important }
       .#{$prefix}margin-top__#{$countResponsive}--#{nth($suffix, $o)} { margin-top: $countResponsive+px !important }

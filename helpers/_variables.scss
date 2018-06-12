@@ -1,11 +1,11 @@
 /* Prefix & suffix */
-$prefix: 'au-' !default; // init your class with this prefix
+$prefix: 'nix-' !default; // init your class with this prefix
 
 /* Breakpoints */
-$lg: 1400px !default;
-$md: 1200px !default;
-$sm: 1024px !default;
-$xs: 768px !default;
+$lg: 1200px !default;
+$md: 992px !default;
+$sm: 768px !default;
+$xs: 0 !default;
 $breakpoints: $lg, $md, $sm, $xs;
 $suffix: 'lg', 'md', 'sm', 'xs'; // breakpoints suffix
 

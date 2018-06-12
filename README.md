@@ -2,7 +2,11 @@
 
 Css helpers based in Flexbox and responsive.
 
-## Variables
+### YARN
+
+`yarn add aurum-nix`
+
+### Variables
 
 You can customize for your own project on file `helpers/_variables.scss`:
 

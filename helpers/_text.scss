@@ -17,7 +17,7 @@
 .#{$prefix}font-style__oblique { font-style: oblique !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media(max-width: nth($breakpoints, $i)){
+  @media(min-width: nth($breakpoints, $i)){
     .#{$prefix}text-align__left--#{nth($suffix, $i)} { text-align: left !important }
     .#{$prefix}text-align__right--#{nth($suffix, $i)} { text-align: right !important }
     .#{$prefix}text-align__center--#{nth($suffix, $i)} { text-align: center !important }
