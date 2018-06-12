@@ -13,7 +13,7 @@
 .#{$prefix}overflow__scroll { overflow: scroll !important; }
 
 @for $i from 1 through length($breakpoints) {
-  @media(max-width: nth($breakpoints, $i)){
+  @media(min-width: nth($breakpoints, $i)){
     .#{$prefix}display__none--#{nth($suffix, $i)} { display: none !important; }
     .#{$prefix}display__inline--#{nth($suffix, $i)} { display: inline !important; }
     .#{$prefix}display__inline-block--#{nth($suffix, $i)} { display: inline-block !important; }

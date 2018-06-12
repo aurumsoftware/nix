@@ -34,7 +34,7 @@
 .#{$prefix}flex-wrap__reverse { flex-wrap: wrap-reverse !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media(max-width: nth($breakpoints, $i)){
+  @media(min-width: nth($breakpoints, $i)){
     .#{$prefix}justify-content__start--#{nth($suffix, $i)} { justify-content: flex-start !important }
     .#{$prefix}justify-content__end--#{nth($suffix, $i)} { justify-content: flex-end !important }
     .#{$prefix}justify-content__between--#{nth($suffix, $i)} { justify-content: space-between !important }
