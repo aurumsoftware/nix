@@ -4,12 +4,13 @@
 $prefix: 'nix-' !default; // init your class with this prefix
 
 /* Breakpoints */
-$sm: 768px !default;
-$md: 1024px !default;
-$lg: 1200px !default;
-$breakpoints: $sm, $md, $lg;
-$suffix: 'sm', 'md', 'lg'; // breakpoints suffix
+$mob: 768px;
+$tab: 1024px;
+$desk: 1200px;
+
+$breakpoints: $mob, $tab, $desk;
+$suffix: 'mob', 'tab', 'desk'; // breakpoints suffix
 
 /* Interval sizes by px */
-$int-size: 5 !default; // interval (eg: 5, 10, 15, 20...)
+$int-size: 5 !default; // interval (eg: 5, 10, 15, 20, 25...)
 $max-size: 100 !default; // max size

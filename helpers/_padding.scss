@@ -1,11 +1,11 @@
 $countDefault: 0;
 
 @while $countDefault <= $max-size {
-  .#{$prefix}padding_#{$countDefault}--xs { padding: $countDefault+px !important }
-  .#{$prefix}padding-top_#{$countDefault}--xs { padding-top: $countDefault+px !important }
-  .#{$prefix}padding-bottom_#{$countDefault}--xs { padding-bottom: $countDefault+px !important }
-  .#{$prefix}padding-left_#{$countDefault}--xs { padding-left: $countDefault+px !important }
-  .#{$prefix}padding-right_#{$countDefault}--xs { padding-right: $countDefault+px !important }
+  .#{$prefix}padding_#{$countDefault} { padding: $countDefault+px !important }
+  .#{$prefix}padding-top_#{$countDefault} { padding-top: $countDefault+px !important }
+  .#{$prefix}padding-bottom_#{$countDefault} { padding-bottom: $countDefault+px !important }
+  .#{$prefix}padding-left_#{$countDefault} { padding-left: $countDefault+px !important }
+  .#{$prefix}padding-right_#{$countDefault} { padding-right: $countDefault+px !important }
 
   $countDefault: $countDefault + 5;
 }
@@ -15,7 +15,7 @@ $countResponsive: 0;
 
 @while $countResponsive <= $max-size {
   @for $o from 1 through length($breakpoints) {
-    @media screen and (min-width: nth($breakpoints, $o)){
+    @media screen and (max-width: nth($breakpoints, $o) - 1px){
       .#{$prefix}padding_#{$countResponsive}--#{nth($suffix, $o)} { padding: $countResponsive+px !important }
       .#{$prefix}padding-top_#{$countResponsive}--#{nth($suffix, $o)} { padding-top: $countResponsive+px !important }
       .#{$prefix}padding-bottom_#{$countResponsive}--#{nth($suffix, $o)} { padding-bottom: $countResponsive+px !important }
