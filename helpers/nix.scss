@@ -1,8 +1,15 @@
-@import '_variables';
-@import '_display';
-@import '_flex';
-@import '_align';
-@import '_position';
-@import '_text';
-@import '_margin';
-@import '_padding';
+/*!
+ * Nix v0.2.0 (https://github.com/aurumsoftware/nix)
+ * Copyright 2018-2018 The Nix Authors
+ * Copyright 2018-2018 Aurum Software, Inc.
+ * Licensed under MIT (https://github.com/aurumsoftware/nix/blob/master/LICENCE)
+ */
+
+@import 'variables';
+@import 'display';
+@import 'flex';
+@import 'align';
+@import 'position';
+@import 'text';
+@import 'margin';
+@import 'padding';

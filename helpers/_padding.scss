@@ -1,11 +1,11 @@
 $countDefault: 0;
 
 @while $countDefault <= $max-size {
-  .#{$prefix}padding__#{$countDefault} { padding: $countDefault+px !important }
-  .#{$prefix}padding-top__#{$countDefault} { padding-top: $countDefault+px !important }
-  .#{$prefix}padding-bottom__#{$countDefault} { padding-bottom: $countDefault+px !important }
-  .#{$prefix}padding-left__#{$countDefault} { padding-left: $countDefault+px !important }
-  .#{$prefix}padding-right__#{$countDefault} { padding-right: $countDefault+px !important }
+  .#{$prefix}padding_#{$countDefault}--xs { padding: $countDefault+px !important }
+  .#{$prefix}padding-top_#{$countDefault}--xs { padding-top: $countDefault+px !important }
+  .#{$prefix}padding-bottom_#{$countDefault}--xs { padding-bottom: $countDefault+px !important }
+  .#{$prefix}padding-left_#{$countDefault}--xs { padding-left: $countDefault+px !important }
+  .#{$prefix}padding-right_#{$countDefault}--xs { padding-right: $countDefault+px !important }
 
   $countDefault: $countDefault + 5;
 }
@@ -15,12 +15,12 @@ $countResponsive: 0;
 
 @while $countResponsive <= $max-size {
   @for $o from 1 through length($breakpoints) {
-    @media(min-width: nth($breakpoints, $o)){
-      .#{$prefix}padding__#{$countResponsive}--#{nth($suffix, $o)} { padding: $countResponsive+px !important }
-      .#{$prefix}padding-top__#{$countResponsive}--#{nth($suffix, $o)} { padding-top: $countResponsive+px !important }
-      .#{$prefix}padding-bottom__#{$countResponsive}--#{nth($suffix, $o)} { padding-bottom: $countResponsive+px !important }
-      .#{$prefix}padding-left__#{$countResponsive}--#{nth($suffix, $o)} { padding-left: $countResponsive+px !important }
-      .#{$prefix}padding-right__#{$countResponsive}--#{nth($suffix, $o)} { padding-right: $countResponsive+px !important }
+    @media screen and (min-width: nth($breakpoints, $o)){
+      .#{$prefix}padding_#{$countResponsive}--#{nth($suffix, $o)} { padding: $countResponsive+px !important }
+      .#{$prefix}padding-top_#{$countResponsive}--#{nth($suffix, $o)} { padding-top: $countResponsive+px !important }
+      .#{$prefix}padding-bottom_#{$countResponsive}--#{nth($suffix, $o)} { padding-bottom: $countResponsive+px !important }
+      .#{$prefix}padding-left_#{$countResponsive}--#{nth($suffix, $o)} { padding-left: $countResponsive+px !important }
+      .#{$prefix}padding-right_#{$countResponsive}--#{nth($suffix, $o)} { padding-right: $countResponsive+px !important }
     }
   }
 

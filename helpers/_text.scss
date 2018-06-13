@@ -1,39 +1,39 @@
-.#{$prefix}text-align__left { text-align: left !important }
-.#{$prefix}text-align__right { text-align: right !important }
-.#{$prefix}text-align__center { text-align: center !important }
+.#{$prefix}text-align_left--xs { text-align: left !important }
+.#{$prefix}text-align_right--xs { text-align: right !important }
+.#{$prefix}text-align_center--xs { text-align: center !important }
 
-.#{$prefix}text-transform__none { text-transform: none !important }
-.#{$prefix}text-transform__lowercase { text-transform: lowercase !important }
-.#{$prefix}text-transform__uppercase { text-transform: uppercase !important }
-.#{$prefix}text-transform__capitalize { text-transform: capitalize !important }
+.#{$prefix}text-transform_none--xs { text-transform: none !important }
+.#{$prefix}text-transform_lowercase--xs { text-transform: lowercase !important }
+.#{$prefix}text-transform_uppercase--xs { text-transform: uppercase !important }
+.#{$prefix}text-transform_capitalize--xs { text-transform: capitalize !important }
 
-.#{$prefix}font-weight__normal { font-weight: normal !important }
-.#{$prefix}font-weight__bold { font-weight: bold !important }
-.#{$prefix}font-weight__bolder { font-weight: bolder !important }
-.#{$prefix}font-weight__lighter { font-weight: lighter !important }
+.#{$prefix}font-weight_normal--xs { font-weight: normal !important }
+.#{$prefix}font-weight_bold--xs { font-weight: bold !important }
+.#{$prefix}font-weight_bolder--xs { font-weight: bolder !important }
+.#{$prefix}font-weight_lighter--xs { font-weight: lighter !important }
 
-.#{$prefix}font-style__normal { font-style: normal !important }
-.#{$prefix}font-style__italic { font-style: italic !important }
-.#{$prefix}font-style__oblique { font-style: oblique !important }
+.#{$prefix}font-style_normal--xs { font-style: normal !important }
+.#{$prefix}font-style_italic--xs { font-style: italic !important }
+.#{$prefix}font-style_oblique--xs { font-style: oblique !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media(min-width: nth($breakpoints, $i)){
-    .#{$prefix}text-align__left--#{nth($suffix, $i)} { text-align: left !important }
-    .#{$prefix}text-align__right--#{nth($suffix, $i)} { text-align: right !important }
-    .#{$prefix}text-align__center--#{nth($suffix, $i)} { text-align: center !important }
+  @media screen and (min-width: nth($breakpoints, $i)){
+    .#{$prefix}text-align_left--#{nth($suffix, $i)} { text-align: left !important }
+    .#{$prefix}text-align_right--#{nth($suffix, $i)} { text-align: right !important }
+    .#{$prefix}text-align_center--#{nth($suffix, $i)} { text-align: center !important }
 
-    .#{$prefix}text-transform__none--#{nth($suffix, $i)} { text-transform: none !important }
-    .#{$prefix}text-transform__lowercase--#{nth($suffix, $i)} { text-transform: lowercase !important }
-    .#{$prefix}text-transform__uppercase--#{nth($suffix, $i)} { text-transform: uppercase !important }
-    .#{$prefix}text-transform__capitalize--#{nth($suffix, $i)} { text-transform: capitalize !important }
+    .#{$prefix}text-transform_none--#{nth($suffix, $i)} { text-transform: none !important }
+    .#{$prefix}text-transform_lowercase--#{nth($suffix, $i)} { text-transform: lowercase !important }
+    .#{$prefix}text-transform_uppercase--#{nth($suffix, $i)} { text-transform: uppercase !important }
+    .#{$prefix}text-transform_capitalize--#{nth($suffix, $i)} { text-transform: capitalize !important }
 
-    .#{$prefix}font-weight__normal--#{nth($suffix, $i)} { font-weight: normal !important }
-    .#{$prefix}font-weight__bold--#{nth($suffix, $i)} { font-weight: bold !important }
-    .#{$prefix}font-weight__bolder--#{nth($suffix, $i)} { font-weight: bolder !important }
-    .#{$prefix}font-weight__lighter--#{nth($suffix, $i)} { font-weight: lighter !important }
+    .#{$prefix}font-weight_normal--#{nth($suffix, $i)} { font-weight: normal !important }
+    .#{$prefix}font-weight_bold--#{nth($suffix, $i)} { font-weight: bold !important }
+    .#{$prefix}font-weight_bolder--#{nth($suffix, $i)} { font-weight: bolder !important }
+    .#{$prefix}font-weight_lighter--#{nth($suffix, $i)} { font-weight: lighter !important }
     
-    .#{$prefix}font-style__normal--#{nth($suffix, $i)} { font-style: normal !important }
-    .#{$prefix}font-style__italic--#{nth($suffix, $i)} { font-style: italic !important }
-    .#{$prefix}font-style__oblique--#{nth($suffix, $i)} { font-style: oblique !important }
+    .#{$prefix}font-style_normal--#{nth($suffix, $i)} { font-style: normal !important }
+    .#{$prefix}font-style_italic--#{nth($suffix, $i)} { font-style: italic !important }
+    .#{$prefix}font-style_oblique--#{nth($suffix, $i)} { font-style: oblique !important }
   }
 }
