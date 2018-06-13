@@ -1,23 +1,23 @@
-.#{$prefix}text-align_left--xs { text-align: left !important }
-.#{$prefix}text-align_right--xs { text-align: right !important }
-.#{$prefix}text-align_center--xs { text-align: center !important }
+.#{$prefix}text-align_left { text-align: left !important }
+.#{$prefix}text-align_right { text-align: right !important }
+.#{$prefix}text-align_center { text-align: center !important }
 
-.#{$prefix}text-transform_none--xs { text-transform: none !important }
-.#{$prefix}text-transform_lowercase--xs { text-transform: lowercase !important }
-.#{$prefix}text-transform_uppercase--xs { text-transform: uppercase !important }
-.#{$prefix}text-transform_capitalize--xs { text-transform: capitalize !important }
+.#{$prefix}text-transform_none { text-transform: none !important }
+.#{$prefix}text-transform_lowercase { text-transform: lowercase !important }
+.#{$prefix}text-transform_uppercase { text-transform: uppercase !important }
+.#{$prefix}text-transform_capitalize { text-transform: capitalize !important }
 
-.#{$prefix}font-weight_normal--xs { font-weight: normal !important }
-.#{$prefix}font-weight_bold--xs { font-weight: bold !important }
-.#{$prefix}font-weight_bolder--xs { font-weight: bolder !important }
-.#{$prefix}font-weight_lighter--xs { font-weight: lighter !important }
+.#{$prefix}font-weight_normal { font-weight: normal !important }
+.#{$prefix}font-weight_bold { font-weight: bold !important }
+.#{$prefix}font-weight_bolder { font-weight: bolder !important }
+.#{$prefix}font-weight_lighter { font-weight: lighter !important }
 
-.#{$prefix}font-style_normal--xs { font-style: normal !important }
-.#{$prefix}font-style_italic--xs { font-style: italic !important }
-.#{$prefix}font-style_oblique--xs { font-style: oblique !important }
+.#{$prefix}font-style_normal { font-style: normal !important }
+.#{$prefix}font-style_italic { font-style: italic !important }
+.#{$prefix}font-style_oblique { font-style: oblique !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media screen and (min-width: nth($breakpoints, $i)){
+  @media screen and (max-width: nth($breakpoints, $i) - 1px){
     .#{$prefix}text-align_left--#{nth($suffix, $i)} { text-align: left !important }
     .#{$prefix}text-align_right--#{nth($suffix, $i)} { text-align: right !important }
     .#{$prefix}text-align_center--#{nth($suffix, $i)} { text-align: center !important }

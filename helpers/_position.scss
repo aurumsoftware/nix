@@ -1,11 +1,11 @@
-.#{$prefix}position_relative--xs { position: relative !important }
-.#{$prefix}position_absolute--xs { position: absolute !important }
-.#{$prefix}position_fixed--xs { position: fixed !important }
-.#{$prefix}position_static--xs { position: static !important }
-.#{$prefix}position_sticky--xs { position: sticky !important }
+.#{$prefix}position_relative { position: relative !important }
+.#{$prefix}position_absolute { position: absolute !important }
+.#{$prefix}position_fixed { position: fixed !important }
+.#{$prefix}position_static { position: static !important }
+.#{$prefix}position_sticky { position: sticky !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media screen and (min-width: nth($breakpoints, $i)){
+  @media screen and (max-width: nth($breakpoints, $i) - 1px){
     .#{$prefix}position_relative--#{nth($suffix, $i)} { position: relative !important }
     .#{$prefix}position_absolute--#{nth($suffix, $i)} { position: absolute !important }
     .#{$prefix}position_fixed--#{nth($suffix, $i)} { position: fixed !important }
