@@ -1,12 +1,11 @@
 $countDefault: 0;
 
 @while $countDefault <= $max-size {
-  .#{$prefix}margin-auto { margin: 0 auto !important }
-  .#{$prefix}margin__#{$countDefault} { margin: $countDefault+px !important }
-  .#{$prefix}margin-top__#{$countDefault} { margin-top: $countDefault+px !important }
-  .#{$prefix}margin-bottom__#{$countDefault} { margin-bottom: $countDefault+px !important }
-  .#{$prefix}margin-left__#{$countDefault} { margin-left: $countDefault+px !important }
-  .#{$prefix}margin-right__#{$countDefault} { margin-right: $countDefault+px !important }
+  .#{$prefix}margin_#{$countDefault}--xs { margin: $countDefault+px !important }
+  .#{$prefix}margin-top_#{$countDefault}--xs { margin-top: $countDefault+px !important }
+  .#{$prefix}margin-bottom_#{$countDefault}--xs { margin-bottom: $countDefault+px !important }
+  .#{$prefix}margin-left_#{$countDefault}--xs { margin-left: $countDefault+px !important }
+  .#{$prefix}margin-right_#{$countDefault}--xs { margin-right: $countDefault+px !important }
 
   $countDefault: $countDefault + $int-size;
 }
@@ -16,13 +15,12 @@ $countResponsive: 0;
 
 @while $countResponsive <= $max-size { 
   @for $o from 1 through length($breakpoints) {
-    @media(min-width: nth($breakpoints, $o)){
-      .#{$prefix}margin-auto--#{nth($suffix, $o)} { margin: 0 auto !important }
-      .#{$prefix}margin__#{$countResponsive}--#{nth($suffix, $o)} { margin: $countResponsive+px !important }
-      .#{$prefix}margin-top__#{$countResponsive}--#{nth($suffix, $o)} { margin-top: $countResponsive+px !important }
-      .#{$prefix}margin-bottom__#{$countResponsive}--#{nth($suffix, $o)} { margin-bottom: $countResponsive+px !important }
-      .#{$prefix}margin-left__#{$countResponsive}--#{nth($suffix, $o)} { margin-left: $countResponsive+px !important }
-      .#{$prefix}margin-right__#{$countResponsive}--#{nth($suffix, $o)} { margin-right: $countResponsive+px !important }
+    @media screen and (min-width: nth($breakpoints, $o)){
+      .#{$prefix}margin_#{$countResponsive}--#{nth($suffix, $o)} { margin: $countResponsive+px !important }
+      .#{$prefix}margin-top_#{$countResponsive}--#{nth($suffix, $o)} { margin-top: $countResponsive+px !important }
+      .#{$prefix}margin-bottom_#{$countResponsive}--#{nth($suffix, $o)} { margin-bottom: $countResponsive+px !important }
+      .#{$prefix}margin-left_#{$countResponsive}--#{nth($suffix, $o)} { margin-left: $countResponsive+px !important }
+      .#{$prefix}margin-right_#{$countResponsive}--#{nth($suffix, $o)} { margin-right: $countResponsive+px !important }
     }
   }
   

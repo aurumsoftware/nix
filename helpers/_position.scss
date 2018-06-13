@@ -1,15 +1,15 @@
-.#{$prefix}position__relative { position: relative !important }
-.#{$prefix}position__absolute { position: absolute !important }
-.#{$prefix}position__fixed { position: fixed !important }
-.#{$prefix}position__static { position: static !important }
-.#{$prefix}position__sticky { position: sticky !important }
+.#{$prefix}position_relative--xs { position: relative !important }
+.#{$prefix}position_absolute--xs { position: absolute !important }
+.#{$prefix}position_fixed--xs { position: fixed !important }
+.#{$prefix}position_static--xs { position: static !important }
+.#{$prefix}position_sticky--xs { position: sticky !important }
 
 @for $i from 1 through length($breakpoints) {
-  @media(min-width: nth($breakpoints, $i)){
-    .#{$prefix}position__relative--#{nth($suffix, $i)} { position: relative !important }
-    .#{$prefix}position__absolute--#{nth($suffix, $i)} { position: absolute !important }
-    .#{$prefix}position__fixed--#{nth($suffix, $i)} { position: fixed !important }
-    .#{$prefix}position__static--#{nth($suffix, $i)} { position: static !important }
-    .#{$prefix}position__sticky--#{nth($suffix, $i)} { position: sticky !important }
+  @media screen and (min-width: nth($breakpoints, $i)){
+    .#{$prefix}position_relative--#{nth($suffix, $i)} { position: relative !important }
+    .#{$prefix}position_absolute--#{nth($suffix, $i)} { position: absolute !important }
+    .#{$prefix}position_fixed--#{nth($suffix, $i)} { position: fixed !important }
+    .#{$prefix}position_static--#{nth($suffix, $i)} { position: static !important }
+    .#{$prefix}position_sticky--#{nth($suffix, $i)} { position: sticky !important }
   }
 }

@@ -1,4 +1,4 @@
-# Nix
+# Nix (beta)
 
 Css helpers based in Flexbox and responsive.
 
@@ -15,25 +15,18 @@ You can customize for your own project on file `helpers/_variables.scss`:
 Change to your prefered prefix:
 
 ```scss
-$prefix: 'au-';
+$prefix: 'nix-';
 ```
 
-> With this example, your class should be `au-diplay--block`
+> With this example, your class should be `nix-diplay_block--xs`
 
 ### Breakpoint sizes:
 
 ```scss
-$lg: 1400px;
-$md: 1200px;
-$sm: 1024px;
-$xs: 768px;
-```
-> The media queries is used as  `max-width`
-
-and suffix to apply in class name (in order of breakpoint sizes):
-
-```scss
-$suffix: 'lg', 'md', 'sm', 'xs';
+$xs: 0;
+$sm: 768px;
+$md: 1024px;
+$lg: 1200px;
 ```
 
 ### Sizes
@@ -49,8 +42,4 @@ $max-size: 100;
 
 ## Generate your custom values
 
-You can compile with gulp:
-
-```bash
-gulp
-```
+You can compile with gulp rinning `gulp` or `gulp watch`;

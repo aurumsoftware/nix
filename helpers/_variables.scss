@@ -1,13 +1,14 @@
+// Variables
+
 /* Prefix & suffix */
 $prefix: 'nix-' !default; // init your class with this prefix
 
 /* Breakpoints */
-$lg: 1200px !default;
-$md: 992px !default;
 $sm: 768px !default;
-$xs: 0 !default;
-$breakpoints: $lg, $md, $sm, $xs;
-$suffix: 'lg', 'md', 'sm', 'xs'; // breakpoints suffix
+$md: 1024px !default;
+$lg: 1200px !default;
+$breakpoints: $sm, $md, $lg;
+$suffix: 'sm', 'md', 'lg'; // breakpoints suffix
 
 /* Interval sizes by px */
 $int-size: 5 !default; // interval (eg: 5, 10, 15, 20...)
