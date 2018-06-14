@@ -1,12 +1,24 @@
 # Nix
 
-Css class helpers based in Flexbox and responsive.
+This library was created for help to you customize the structure of your project with classes that change properties as margins and alignment, including responsive.
 
-### YARN
+### Install
 
-`yarn add aurum-nix`
+Install the package `aurum-nix`:
 
-### Variables
+```shel
+yarn add aurum-nix
+```
+
+### Usage
+
+Write the classes as you would write css properties and values separating with `_` between propertie and the value.
+
+By default, the classes has a prefix `nix-` that you should apply before of the class name.
+
+You can use the responsive classes with the suffix `--mob` for screens up until 768px (mobile), `--tab` for screens up until 1024px (tablets and small screens) and `--desk` for screens up until 1200px (medium screens).
+
+### Customization
 
 You can customize for your own project, importing in your sass `node_modules/aurum-nix/nix` and updating variables.
 
