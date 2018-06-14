@@ -4,10 +4,15 @@ This library was created for help to you customize the structure of your project
 
 ### Install
 
-Install the package `aurum-nix`:
+Download this repository or install the package `aurum-nix`:
 
 ```shel
 yarn add aurum-nix
+```
+And import in your project:
+
+```xml
+<link rel="stylesheet" type="text/css" href="node_modules/aurum-nix/dist/nix.min.css" />
 ```
 
 ### Usage
