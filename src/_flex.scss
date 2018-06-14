@@ -1,3 +1,5 @@
+@import 'variables';
+
 .#{$prefix}justify-content_start { justify-content: flex-start !important }
 .#{$prefix}justify-content_end { justify-content: flex-end !important }
 .#{$prefix}justify-content_between { justify-content: space-between !important }

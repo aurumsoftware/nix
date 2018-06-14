@@ -1,0 +1,19 @@
+@import 'variables';
+
+.#{$prefix}vertical-align_baseline { vertical-align: baseline !important; }
+.#{$prefix}vertical-align_top { vertical-align: top !important; }
+.#{$prefix}vertical-align_middle { vertical-align: middle !important; }
+.#{$prefix}vertical-align_bottom { vertical-align: bottom !important; }
+.#{$prefix}vertical-align_text-top { vertical-align: text-top !important; }
+.#{$prefix}vertical-align_text-bottom { vertical-align: text-bottom !important; }
+
+@for $i from 1 through length($breakpoints) {
+  @media screen and (max-width: nth($breakpoints, $i) - 1px){
+    .#{$prefix}vertical-align_baseline--#{nth($suffix, $i)} { vertical-align: baseline !important; }
+    .#{$prefix}vertical-align_top--#{nth($suffix, $i)} { vertical-align: top !important; }
+    .#{$prefix}vertical-align_middle--#{nth($suffix, $i)} { vertical-align: middle !important; }
+    .#{$prefix}vertical-align_bottom--#{nth($suffix, $i)} { vertical-align: bottom !important; }
+    .#{$prefix}vertical-align_text-top--#{nth($suffix, $i)} { vertical-align: text-top !important; }
+    .#{$prefix}vertical-align_text-bottom--#{nth($suffix, $i)} { vertical-align: text-bottom !important; }
+  }
+}

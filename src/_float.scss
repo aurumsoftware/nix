@@ -1,0 +1,21 @@
+@import 'variables';
+
+.#{$prefix}float_none { float: none !important; }
+.#{$prefix}float_left { float: left !important; }
+.#{$prefix}float_right { float: right !important; }
+.#{$prefix}clear_none { clear: none !important; }
+.#{$prefix}clear_both { clear: both !important; }
+.#{$prefix}clear_left { clear: left !important; }
+.#{$prefix}clear_right { clear: right !important; }
+
+@for $i from 1 through length($breakpoints) {
+  @media screen and (max-width: nth($breakpoints, $i) - 1px){
+    .#{$prefix}float_none--#{nth($suffix, $i)} { float: none !important; }
+    .#{$prefix}float_left--#{nth($suffix, $i)} { float: left !important; }
+    .#{$prefix}float_right--#{nth($suffix, $i)} { float: right !important; }
+    .#{$prefix}clear_none--#{nth($suffix, $i)} { clear: none !important; }
+    .#{$prefix}clear_both--#{nth($suffix, $i)} { clear: both !important; }
+    .#{$prefix}clear_left--#{nth($suffix, $i)} { clear: left !important; }
+    .#{$prefix}clear_right--#{nth($suffix, $i)} { clear: right !important; }
+  }
+}

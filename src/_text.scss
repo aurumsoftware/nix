@@ -1,6 +1,9 @@
+@import 'variables';
+
 .#{$prefix}text-align_left { text-align: left !important }
 .#{$prefix}text-align_right { text-align: right !important }
 .#{$prefix}text-align_center { text-align: center !important }
+.#{$prefix}text-align_justify { text-align: justify !important }
 
 .#{$prefix}text-transform_none { text-transform: none !important }
 .#{$prefix}text-transform_lowercase { text-transform: lowercase !important }
@@ -21,6 +24,7 @@
     .#{$prefix}text-align_left--#{nth($suffix, $i)} { text-align: left !important }
     .#{$prefix}text-align_right--#{nth($suffix, $i)} { text-align: right !important }
     .#{$prefix}text-align_center--#{nth($suffix, $i)} { text-align: center !important }
+    .#{$prefix}text-align_justify--#{nth($suffix, $i)} { text-align: justify !important }
 
     .#{$prefix}text-transform_none--#{nth($suffix, $i)} { text-transform: none !important }
     .#{$prefix}text-transform_lowercase--#{nth($suffix, $i)} { text-transform: lowercase !important }

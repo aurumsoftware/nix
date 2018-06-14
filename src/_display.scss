@@ -1,3 +1,5 @@
+@import 'variables';
+
 .#{$prefix}display_none { display: none !important; }
 .#{$prefix}display_inline { display: inline !important; }
 .#{$prefix}display_inline-block { display: inline-block !important; }
@@ -7,10 +9,6 @@
 .#{$prefix}display_table-row { display: table-row !important; }
 .#{$prefix}display_flex { display: flex !important; }
 .#{$prefix}display_inline-flex { display: inline-flex !important; }
-.#{$prefix}overflow_auto { overflow: auto !important; }
-.#{$prefix}overflow_visible { overflow: visible !important; }
-.#{$prefix}overflow_hidden { overflow: hidden !important; }
-.#{$prefix}overflow_scroll { overflow: scroll !important; }
 
 @for $i from 1 through length($breakpoints) {
   @media screen and (max-width: nth($breakpoints, $i) - 1px){
@@ -23,9 +21,5 @@
     .#{$prefix}display_table-row--#{nth($suffix, $i)} { display: table-row !important; }
     .#{$prefix}display_flex--#{nth($suffix, $i)} { display: flex !important; }
     .#{$prefix}display_inline-flex--#{nth($suffix, $i)} { display: inline-flex !important; }
-    .#{$prefix}overflow_auto--#{nth($suffix, $i)} { overflow: auto !important; }
-    .#{$prefix}overflow_visible--#{nth($suffix, $i)} { overflow: visible !important; }
-    .#{$prefix}overflow_hidden--#{nth($suffix, $i)} { overflow: hidden !important; }
-    .#{$prefix}overflow_scroll--#{nth($suffix, $i)} { overflow: scroll !important; }
   }
 }

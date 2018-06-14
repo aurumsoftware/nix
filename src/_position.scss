@@ -1,3 +1,5 @@
+@import 'variables';
+
 .#{$prefix}position_relative { position: relative !important }
 .#{$prefix}position_absolute { position: absolute !important }
 .#{$prefix}position_fixed { position: fixed !important }
