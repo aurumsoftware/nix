@@ -1,15 +1,15 @@
 /*!
- * Nix v0.3.1 (https://github.com/aurumsoftware/nix)
+ * Nix v0.4.0 (https://github.com/aurumsoftware/nix)
  * Copyright 2018-2018 The Nix Authors
  * Copyright 2018-2018 Aurum Software, Inc.
  * Licensed under MIT (https://github.com/aurumsoftware/nix/blob/master/LICENCE)
  */
 
-@import 'variables';
 @import 'display';
 @import 'flex';
-@import 'align';
 @import 'position';
 @import 'text';
 @import 'margin';
 @import 'padding';
+@import 'float';
+@import 'others';

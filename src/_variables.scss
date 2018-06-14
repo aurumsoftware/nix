@@ -1,6 +1,6 @@
 // Variables
 
-/* Prefix & suffix */
+/* Prefixer */
 $prefix: 'nix-' !default; // init your class with this prefix
 
 /* Breakpoints */
@@ -9,8 +9,8 @@ $tab: 1024px;
 $desk: 1200px;
 
 $breakpoints: $mob, $tab, $desk;
-$suffix: 'mob', 'tab', 'desk'; // breakpoints suffix
+$suffix: 'mob', 'tab', 'desk';
 
-/* Interval sizes by px */
+/* Interval sizes in px */
 $int-size: 5 !default; // interval (eg: 5, 10, 15, 20, 25...)
 $max-size: 100 !default; // max size

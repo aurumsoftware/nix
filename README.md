@@ -1,6 +1,6 @@
-# Nix (beta)
+# Nix
 
-Css helpers based in Flexbox and responsive.
+Css class helpers based in Flexbox and responsive.
 
 ### YARN
 
@@ -8,38 +8,48 @@ Css helpers based in Flexbox and responsive.
 
 ### Variables
 
-You can customize for your own project on file `helpers/_variables.scss`:
+You can customize for your own project, importing in your sass `node_modules/aurum-nix/nix` and updating variables.
 
-### Prefix
+#### Prefix
 
-Change to your prefered prefix:
+Change the prefix name to your prefered:
 
 ```scss
 $prefix: 'nix-';
 ```
 
-> With this example, your class should be `nix-diplay_block--xs`
+> In this example, your class should be `nix-diplay_block`.
 
-### Breakpoint sizes:
-
-```scss
-$xs: 0;
-$sm: 768px;
-$md: 1024px;
-$lg: 1200px;
-```
-
-### Sizes
-
-This sizes is used to margins, paddings, widths ans heights:
+or remove prefix setting a blank value:
 
 ```scss
-$int-size: 5;
-$max-size: 100;
+$prefix: '';
 ```
 
-`$int-size` is the interval to sizes, and `$max-size` is the max size to generate.
+> With this example, your class should be `diplay_block`.
 
-## Generate your custom values
+#### Breakpoints
 
-You can compile with gulp rinning `gulp` or `gulp watch`;
+```scss
+$mob: 768px; // screens up until 768px (mobile)
+$tab: 1024px; // screens up until 1024px (tablet/small desktops)
+$desk: 1200px; // screens up until 1200px (desktops)
+```
+
+#### Sizes
+
+This sizes is used for margins and paddings:
+
+```scss
+$int-size: 5; // every 5px
+$max-size: 100; // up until 100px
+```
+
+> `$int-size` is the interval to sizes, and `$max-size` is the max size to generate.
+
+## Generate your custom values from this repository
+
+1. Clone this repository;
+2. Install `gulp-cli`;
+3. Run `yarn` or `npm instal`;
+4. Run `gulp` to build or `gulp watch` to watch the changes;

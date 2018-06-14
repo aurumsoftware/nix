@@ -1,3 +1,5 @@
+@import 'variables';
+
 .#{$prefix}display_none { display: none !important; }
 .#{$prefix}display_inline { display: inline !important; }
 .#{$prefix}display_inline-block { display: inline-block !important; }
