@@ -1,30 +1,23 @@
 @import 'variables';
 
-$countDefault: 0;
+$props: '', '-top', '-bottom', '-left', '-right';
 
-@while $countDefault <= $max-size {
-  .#{$prefix}padding_#{$countDefault} { padding: $countDefault+px !important }
-  .#{$prefix}padding-top_#{$countDefault} { padding-top: $countDefault+px !important }
-  .#{$prefix}padding-bottom_#{$countDefault} { padding-bottom: $countDefault+px !important }
-  .#{$prefix}padding-left_#{$countDefault} { padding-left: $countDefault+px !important }
-  .#{$prefix}padding-right_#{$countDefault} { padding-right: $countDefault+px !important }
-
-  $countDefault: $countDefault + 5;
+@for $indexProps from 1 through length($props) {
+  $countDefault: 0;
+  @while $countDefault <= $max-size {
+    .#{$prefix}padding#{nth($props, $indexProps)}_#{$countDefault} { padding: $countDefault+px !important }
+    $countDefault: $countDefault + 5;
+  }
 }
 
-// Breakpoints
-$countResponsive: 0;
-
-@while $countResponsive <= $max-size {
-  @for $o from 1 through length($breakpoints) {
-    @media screen and (max-width: nth($breakpoints, $o) - 1px){
-      .#{$prefix}padding_#{$countResponsive}--#{nth($suffix, $o)} { padding: $countResponsive+px !important }
-      .#{$prefix}padding-top_#{$countResponsive}--#{nth($suffix, $o)} { padding-top: $countResponsive+px !important }
-      .#{$prefix}padding-bottom_#{$countResponsive}--#{nth($suffix, $o)} { padding-bottom: $countResponsive+px !important }
-      .#{$prefix}padding-left_#{$countResponsive}--#{nth($suffix, $o)} { padding-left: $countResponsive+px !important }
-      .#{$prefix}padding-right_#{$countResponsive}--#{nth($suffix, $o)} { padding-right: $countResponsive+px !important }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    @for $indexProps from 1 through length($props) {
+      $countDefault: 0;
+      @while $countDefault <= $max-size {
+        .#{$prefix}padding#{nth($props, $indexProps)}_#{$countDefault}--#{nth($suffix, $indexSuffix)} { padding: $countDefault+px !important }
+        $countDefault: $countDefault + 5;
+      }
     }
   }
-
-  $countResponsive: $countResponsive + 5;
 }

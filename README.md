@@ -21,11 +21,11 @@ Write the classes as you would write css properties and values separating with `
 
 By default, the classes has a prefix `nix-` that you should apply before of the class name.
 
-You can use the responsive classes with the suffix `--mob` for screens up until 768px (mobile), `--tab` for screens up until 1024px (tablets and small screens) and `--desk` for screens up until 1200px (medium screens).
+You can use the responsive classes with the suffix `--xs` for screens up until 768px (mobile), `--sm` for screens up until 1024px (tablets and small screens), `--md` for screens up until 1200px (medium screens) and `--lg` for screens up until 1600px (large screens).
 
 ### Customization
 
-You can customize for your own project, importing in your sass `node_modules/aurum-nix/nix` and updating variables.
+You can customize for your own project, update values of variables then import the Nix file `node_modules/aurum-nix/nix` in your sass.
 
 #### Prefix
 
@@ -48,9 +48,10 @@ $prefix: '';
 #### Breakpoints
 
 ```scss
-$mob: 768px; // screens up until 768px (mobile)
-$tab: 1024px; // screens up until 1024px (tablet/small desktops)
-$desk: 1200px; // screens up until 1200px (desktops)
+$xs: 768px; // screens up until 768px (mobile)
+$sm: 1024px; // screens up until 1024px (tablet/desktops small screens)
+$md: 1200px; // screens up until 1200px (desktops medium screens)
+$lg: 1600px; // screens up until 1200px (desktops large screens)
 ```
 
 #### Sizes

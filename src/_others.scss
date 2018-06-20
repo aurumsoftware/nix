@@ -16,19 +16,19 @@
 .#{$prefix}cursor_pointer { cursor: pointer !important; }
 .#{$prefix}cursor_not-allowed { cursor: not-allowed !important; }
 
-@for $i from 1 through length($breakpoints) {
-  @media screen and (max-width: nth($breakpoints, $i) - 1px){
-    .#{$prefix}white-space_normal--#{nth($suffix, $i)} { white-space: normal !important; }
-    .#{$prefix}white-space_nowrap--#{nth($suffix, $i)} { white-space: nowrap !important; }
-    .#{$prefix}white-space_pre--#{nth($suffix, $i)} { white-space: pre !important; }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    .#{$prefix}white-space_normal--#{nth($suffix, $indexSuffix)} { white-space: normal !important; }
+    .#{$prefix}white-space_nowrap--#{nth($suffix, $indexSuffix)} { white-space: nowrap !important; }
+    .#{$prefix}white-space_pre--#{nth($suffix, $indexSuffix)} { white-space: pre !important; }
 
-    .#{$prefix}overflow_auto--#{nth($suffix, $i)} { overflow: auto !important; }
-    .#{$prefix}overflow_hidden--#{nth($suffix, $i)} { overflow: hidden !important; }
-    .#{$prefix}overflow_scroll--#{nth($suffix, $i)} { overflow: scroll !important; }
-    .#{$prefix}overflow_visible--#{nth($suffix, $i)} { overflow: visible !important; }
+    .#{$prefix}overflow_auto--#{nth($suffix, $indexSuffix)} { overflow: auto !important; }
+    .#{$prefix}overflow_hidden--#{nth($suffix, $indexSuffix)} { overflow: hidden !important; }
+    .#{$prefix}overflow_scroll--#{nth($suffix, $indexSuffix)} { overflow: scroll !important; }
+    .#{$prefix}overflow_visible--#{nth($suffix, $indexSuffix)} { overflow: visible !important; }
 
-    .#{$prefix}cursor_default--#{nth($suffix, $i)} { cursor: default !important; }
-    .#{$prefix}cursor_pointer--#{nth($suffix, $i)} { cursor: pointer !important; }
-    .#{$prefix}cursor_not-allowed--#{nth($suffix, $i)} { cursor: not-allowed !important; }
+    .#{$prefix}cursor_default--#{nth($suffix, $indexSuffix)} { cursor: default !important; }
+    .#{$prefix}cursor_pointer--#{nth($suffix, $indexSuffix)} { cursor: pointer !important; }
+    .#{$prefix}cursor_not-allowed--#{nth($suffix, $indexSuffix)} { cursor: not-allowed !important; }
   }
 }

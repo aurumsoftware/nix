@@ -6,12 +6,12 @@
 .#{$prefix}position_static { position: static !important }
 .#{$prefix}position_sticky { position: sticky !important }
 
-@for $i from 1 through length($breakpoints) {
-  @media screen and (max-width: nth($breakpoints, $i) - 1px){
-    .#{$prefix}position_relative--#{nth($suffix, $i)} { position: relative !important }
-    .#{$prefix}position_absolute--#{nth($suffix, $i)} { position: absolute !important }
-    .#{$prefix}position_fixed--#{nth($suffix, $i)} { position: fixed !important }
-    .#{$prefix}position_static--#{nth($suffix, $i)} { position: static !important }
-    .#{$prefix}position_sticky--#{nth($suffix, $i)} { position: sticky !important }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    .#{$prefix}position_relative--#{nth($suffix, $indexSuffix)} { position: relative !important }
+    .#{$prefix}position_absolute--#{nth($suffix, $indexSuffix)} { position: absolute !important }
+    .#{$prefix}position_fixed--#{nth($suffix, $indexSuffix)} { position: fixed !important }
+    .#{$prefix}position_static--#{nth($suffix, $indexSuffix)} { position: static !important }
+    .#{$prefix}position_sticky--#{nth($suffix, $indexSuffix)} { position: sticky !important }
   }
 }
