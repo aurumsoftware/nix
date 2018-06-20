@@ -7,13 +7,13 @@
 .#{$prefix}vertical-align_text-top { vertical-align: text-top !important; }
 .#{$prefix}vertical-align_text-bottom { vertical-align: text-bottom !important; }
 
-@for $i from 1 through length($breakpoints) {
-  @media screen and (max-width: nth($breakpoints, $i) - 1px){
-    .#{$prefix}vertical-align_baseline--#{nth($suffix, $i)} { vertical-align: baseline !important; }
-    .#{$prefix}vertical-align_top--#{nth($suffix, $i)} { vertical-align: top !important; }
-    .#{$prefix}vertical-align_middle--#{nth($suffix, $i)} { vertical-align: middle !important; }
-    .#{$prefix}vertical-align_bottom--#{nth($suffix, $i)} { vertical-align: bottom !important; }
-    .#{$prefix}vertical-align_text-top--#{nth($suffix, $i)} { vertical-align: text-top !important; }
-    .#{$prefix}vertical-align_text-bottom--#{nth($suffix, $i)} { vertical-align: text-bottom !important; }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    .#{$prefix}vertical-align_baseline--#{nth($suffix, $indexSuffix)} { vertical-align: baseline !important; }
+    .#{$prefix}vertical-align_top--#{nth($suffix, $indexSuffix)} { vertical-align: top !important; }
+    .#{$prefix}vertical-align_middle--#{nth($suffix, $indexSuffix)} { vertical-align: middle !important; }
+    .#{$prefix}vertical-align_bottom--#{nth($suffix, $indexSuffix)} { vertical-align: bottom !important; }
+    .#{$prefix}vertical-align_text-top--#{nth($suffix, $indexSuffix)} { vertical-align: text-top !important; }
+    .#{$prefix}vertical-align_text-bottom--#{nth($suffix, $indexSuffix)} { vertical-align: text-bottom !important; }
   }
 }

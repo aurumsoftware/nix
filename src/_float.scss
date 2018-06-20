@@ -8,14 +8,14 @@
 .#{$prefix}clear_left { clear: left !important; }
 .#{$prefix}clear_right { clear: right !important; }
 
-@for $i from 1 through length($breakpoints) {
-  @media screen and (max-width: nth($breakpoints, $i) - 1px){
-    .#{$prefix}float_none--#{nth($suffix, $i)} { float: none !important; }
-    .#{$prefix}float_left--#{nth($suffix, $i)} { float: left !important; }
-    .#{$prefix}float_right--#{nth($suffix, $i)} { float: right !important; }
-    .#{$prefix}clear_none--#{nth($suffix, $i)} { clear: none !important; }
-    .#{$prefix}clear_both--#{nth($suffix, $i)} { clear: both !important; }
-    .#{$prefix}clear_left--#{nth($suffix, $i)} { clear: left !important; }
-    .#{$prefix}clear_right--#{nth($suffix, $i)} { clear: right !important; }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    .#{$prefix}float_none--#{nth($suffix, $indexSuffix)} { float: none !important; }
+    .#{$prefix}float_left--#{nth($suffix, $indexSuffix)} { float: left !important; }
+    .#{$prefix}float_right--#{nth($suffix, $indexSuffix)} { float: right !important; }
+    .#{$prefix}clear_none--#{nth($suffix, $indexSuffix)} { clear: none !important; }
+    .#{$prefix}clear_both--#{nth($suffix, $indexSuffix)} { clear: both !important; }
+    .#{$prefix}clear_left--#{nth($suffix, $indexSuffix)} { clear: left !important; }
+    .#{$prefix}clear_right--#{nth($suffix, $indexSuffix)} { clear: right !important; }
   }
 }

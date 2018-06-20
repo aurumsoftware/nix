@@ -1,30 +1,23 @@
 @import 'variables';
 
-$countDefault: 0;
+$props: '', '-top', '-bottom', '-left', '-right';
 
-@while $countDefault <= $max-size {
-  .#{$prefix}margin_#{$countDefault} { margin: $countDefault+px !important }
-  .#{$prefix}margin-top_#{$countDefault} { margin-top: $countDefault+px !important }
-  .#{$prefix}margin-bottom_#{$countDefault} { margin-bottom: $countDefault+px !important }
-  .#{$prefix}margin-left_#{$countDefault} { margin-left: $countDefault+px !important }
-  .#{$prefix}margin-right_#{$countDefault} { margin-right: $countDefault+px !important }
-
-  $countDefault: $countDefault + $int-size;
+@for $indexProps from 1 through length($props) {
+  $countDefault: 0;
+  @while $countDefault <= $max-size {
+    .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault} { padding: $countDefault+px !important }
+    $countDefault: $countDefault + 5;
+  }
 }
 
-// Breakpoints
-$countResponsive: 0;
-
-@while $countResponsive <= $max-size { 
-  @for $o from 1 through length($breakpoints) {
-    @media screen and (max-width: nth($breakpoints, $o) - 1px){
-      .#{$prefix}margin_#{$countResponsive}--#{nth($suffix, $o)} { margin: $countResponsive+px !important }
-      .#{$prefix}margin-top_#{$countResponsive}--#{nth($suffix, $o)} { margin-top: $countResponsive+px !important }
-      .#{$prefix}margin-bottom_#{$countResponsive}--#{nth($suffix, $o)} { margin-bottom: $countResponsive+px !important }
-      .#{$prefix}margin-left_#{$countResponsive}--#{nth($suffix, $o)} { margin-left: $countResponsive+px !important }
-      .#{$prefix}margin-right_#{$countResponsive}--#{nth($suffix, $o)} { margin-right: $countResponsive+px !important }
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    @for $indexProps from 1 through length($props) {
+      $countDefault: 0;
+      @while $countDefault <= $max-size {
+        .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault}--#{nth($suffix, $indexSuffix)} { padding: $countDefault+px !important }
+        $countDefault: $countDefault + 5;
+      }
     }
   }
-  
-  $countResponsive: $countResponsive + $int-size;
 }
