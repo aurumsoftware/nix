@@ -5,7 +5,7 @@ $props: '', '-top', '-bottom', '-left', '-right';
 @for $indexProps from 1 through length($props) {
   $countDefault: 0;
   @while $countDefault <= $max-size {
-    .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault} { padding: $countDefault+px !important }
+    .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault} { margin#{nth($props, $indexProps)}: $countDefault+px !important }
     $countDefault: $countDefault + 5;
   }
 }
@@ -15,7 +15,7 @@ $props: '', '-top', '-bottom', '-left', '-right';
     @for $indexProps from 1 through length($props) {
       $countDefault: 0;
       @while $countDefault <= $max-size {
-        .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault}--#{nth($suffix, $indexSuffix)} { padding: $countDefault+px !important }
+        .#{$prefix}margin#{nth($props, $indexProps)}_#{$countDefault}--#{nth($suffix, $indexSuffix)} { margin#{nth($props, $indexProps)}: $countDefault+px !important }
         $countDefault: $countDefault + 5;
       }
     }
