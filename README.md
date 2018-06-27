@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/22989469/41610635-1fa3d5d6-73c4-11e8-9d96-c1ec5222966a.png)
+![image](https://user-images.githubusercontent.com/22989469/41983186-b75b9c3e-7a03-11e8-90bb-0d6904a28b7f.png)
 
 This library was created for help to you customize the structure of your project with classes that change properties as margins and alignment, including responsive.
 
