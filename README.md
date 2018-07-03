@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/22989469/41984598-6a8b4568-7a07-11e8-8f1c-60f7255ff6e9.png)
 
-This library was created for help to you customize the structure of your project with classes that change properties as margins and alignment, including responsive.
+This library was created to help you customize the structure of your project with classes that change properties such as margins and alignments, including support for responsive.
 
 ### Install
 
@@ -9,7 +9,7 @@ Download this repository or install the package `aurum-nix`:
 ```shel
 yarn add aurum-nix
 ```
-And import in your project:
+And import into your project:
 
 ```xml
 <link rel="stylesheet" type="text/css" href="node_modules/aurum-nix/dist/nix.min.css" />
@@ -17,9 +17,9 @@ And import in your project:
 
 ### Usage
 
-Write the classes as you would write css properties and values separating with `_` between propertie and the value.
+Write the classes as you would write css properties and values separating with `_` between the properties and the values.
 
-By default, the classes has a prefix `nix-` that you should apply before of the class name.
+By default, the classes have a prefix `nix-` that you should apply before the class name.
 
 You can use the responsive classes with the suffix `--xs` for screens up until 768px (mobile), `--sm` for screens up until 1024px (tablets and small screens), `--md` for screens up until 1200px (medium screens) and `--lg` for screens up until 1600px (large screens).
 
