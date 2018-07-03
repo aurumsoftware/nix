@@ -35,7 +35,7 @@ Change the prefix name to your preferred:
 $prefix: 'nix-';
 ```
 
-> In this example, your class will be `nix-diplay_block`.
+> In this example, your class name will be `nix-diplay_block`.
 
 or set the prefix to a blank value:
 
@@ -43,7 +43,7 @@ or set the prefix to a blank value:
 $prefix: '';
 ```
 
-> With this example, your class will be `diplay_block`.
+> With this example, your class name will be `diplay_block`.
 
 #### Breakpoints
 
@@ -63,7 +63,7 @@ $int-size: 5; // every 5px
 $max-size: 100; // up to 100px
 ```
 
-> `$int-size` is the interval to sizes, and `$max-size` is the max size to generate.
+> `$int-size` is the interval variable to sizes, and `$max-size` is the max size to generate.
 
 ## Generate your custom values from this repository
 
