@@ -21,46 +21,46 @@ Write the classes as you would write css properties and values separating with `
 
 By default, the classes have a prefix `nix-` that you should apply before the class name.
 
-You can use the responsive classes with the suffix `--xs` for screens up until 768px (mobile), `--sm` for screens up until 1024px (tablets and small screens), `--md` for screens up until 1200px (medium screens) and `--lg` for screens up until 1600px (large screens).
+You can use the responsive classes with the suffix `--xs` for screens up to 768px (mobile), `--sm` for screens up to 1024px (tablets and small screens), `--md` for screens up to 1200px (medium screens) and `--lg` for screens up to 1600px (large screens).
 
 ### Customization
 
-You can customize for your own project, update values of variables then import the Nix file `node_modules/aurum-nix/nix` in your sass.
+You can customize it for your own project, change the values of variables then import the Nix file `node_modules/aurum-nix/nix` in your SASS.
 
 #### Prefix
 
-Change the prefix name to your prefered:
+Change the prefix name to your preferred:
 
 ```scss
 $prefix: 'nix-';
 ```
 
-> In this example, your class should be `nix-diplay_block`.
+> In this example, your class will be `nix-diplay_block`.
 
-or remove prefix setting a blank value:
+or set the prefix to a blank value:
 
 ```scss
 $prefix: '';
 ```
 
-> With this example, your class should be `diplay_block`.
+> With this example, your class will be `diplay_block`.
 
 #### Breakpoints
 
 ```scss
-$xs: 768px; // screens up until 768px (mobile)
-$sm: 1024px; // screens up until 1024px (tablet/desktops small screens)
-$md: 1200px; // screens up until 1200px (desktops medium screens)
-$lg: 1600px; // screens up until 1200px (desktops large screens)
+$xs: 768px; // screens up to 768px (mobile)
+$sm: 1024px; // screens up to 1024px (tablet/desktops small screens)
+$md: 1200px; // screens up to 1200px (desktops medium screens)
+$lg: 1600px; // screens up to 1200px (desktops large screens)
 ```
 
 #### Sizes
 
-This sizes is used for margins and paddings:
+These sizes are used for margins and paddings:
 
 ```scss
 $int-size: 5; // every 5px
-$max-size: 100; // up until 100px
+$max-size: 100; // up to 100px
 ```
 
 > `$int-size` is the interval to sizes, and `$max-size` is the max size to generate.
