@@ -22,4 +22,4 @@ $suffix: 'lg', 'md', 'sm', 'xs' !default;
 /* Interval sizes in px */
 $int-size: 5 !default; // interval (eg: 5, 10, 15, 20, 25...)
 $max-size: 100 !default; // max size
-
+$measure: 'px' !default; // measure type
