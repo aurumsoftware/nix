@@ -14,6 +14,10 @@ And import into your project:
 ```xml
 <link rel="stylesheet" type="text/css" href="node_modules/aurum-nix/dist/nix.min.css" />
 ```
+or
+```javascript
+import "aurum-nix/dist/nix.min.css";
+```
 
 ### Usage
 
@@ -68,6 +72,5 @@ $max-size: 100; // up to 100px
 ## Generate your custom values from this repository
 
 1. Clone this repository;
-2. Install `gulp-cli`;
-3. Run `yarn` or `npm instal`;
-4. Run `gulp` to build or `gulp watch` to watch the changes;
+2. Run `yarn` to instal dependences;
+3. Run `yarn build:nix` to build or `yarn watch:nix` to watch the changes;
