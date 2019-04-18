@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,12,13,14,15,16],[
+webpackJsonppageComponent([5,12,13,14,15,16],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31239,12 +31239,18 @@ exports.default = parseFromAnchor;
 /* 311 */,
 /* 312 */,
 /* 313 */,
-/* 314 */
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsIndex", function() { return pageDocsIndex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AvqJQ", function() { return AvqJQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31256,26 +31262,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from others.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageDocsIndex.
+ * @fileoverview Templates in namespace AvqJQ.
  * @public
  */
 
-goog.module('pageDocsIndex.incrementaldom');
+goog.module('AvqJQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
 /** @suppress {extraRequire} */
 var soydata = goog.require('soydata');
 /** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('soy.asserts');
-/** @suppress {extraRequire} */
 goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
 /** @suppress {extraRequire} */
 goog.require('goog.string');
 var IncrementalDom = goog.require('incrementaldom');
@@ -31287,200 +31291,423 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricSearchAutocomplete.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Sidebar.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
- * @param {{
- *    site: (?),
- *    page: (?)
- * }} opt_data
+ * @param {Object<string, *>=} opt_data
  * @param {(null|undefined)=} opt_ignored
  * @param {Object<string, *>=} opt_ijData
  * @return {void}
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'main');
-    ie_open('main', null, null,
-        'class', 'content');
-      ie_open('div', null, null,
-          'class', 'docs');
-        $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.title, icon: 'icon-16-code-file'}}, null, opt_ijData);
-        $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
-        $topics(opt_data, null, opt_ijData);
-      ie_close('div');
-    ie_close('main');
-  ie_close('div');
+  var param409 = function() {
+    ie_open('h6');
+      var dyn25 = opt_data.page.description;
+      if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('vertical-align');
+      ie_close('h2');
+      ie_open('p');
+        itext('The vertical-align CSS property specifies the vertical alignment of an inline or table-cell box.');
+      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_baseline');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is aligned with the baseline of the parent');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_top');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is aligned with the top of the tallest element on the line');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_middle');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is placed in the middle of the parent element');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_bottom');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is aligned with the lowest element on the line');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_text-top');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is aligned with the top of the parent element\'s font');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-vertical-align_text-bottom');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is aligned with the bottom of the parent element\'s font');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<p>\n  <img src="icon.jpg" class="nix-vertical-align__middle" /> Lorem ipsum dolor sit ammet\n</p>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('overflow');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-overflow_auto');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('If overflow is clipped, a scroll-bar should be added to see the rest of the content');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-overflow_hidden');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The overflow is clipped, and the rest of the content will be invisible');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-overflow_scroll');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The overflow is clipped, but a scroll-bar is added to see the rest of the content');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-overflow_visible');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The overflow is not clipped. It renders outside the element\'s box');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-overflow_hidden"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('cursor');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-cursor_default');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('If overflow is clipped, a scroll-bar should be added to see the rest of the content');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-cursor_pointer');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The overflow is clipped, and the rest of the content will be invisible');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-cursor_not-allowed');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The overflow is clipped, but a scroll-bar is added to see the rest of the content');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-cursor_pointer"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('white-space');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-white-space_normal');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Sequences of whitespace will collapse into a single whitespace. Text will wrap when necessary');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-white-space_nowrap');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a ');
+              ie_open('code');
+                itext('<br>');
+              ie_close('code');
+              itext(' tag is encountered');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-white-space_pre');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Whitespace is preserved by the browser. Text will only wrap on line breaks. Acts like the ');
+              ie_open('code');
+                itext('<pre>');
+              ie_close('code');
+              itext(' tag in HTML');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-white-space_nowrap"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '5');
+      ie_open('h2');
+        itext('Responsive example');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-white-space_nowrap--xs');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--xs');
+              ie_close('code');
+              itext(' suffix only affects device widths of 768px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-overflow_hidden--sm');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--sm');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1024px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-cursor_not-allowed--md');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--md');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1200px and lower.');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param409}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsIndex.render';
+  $render.soyTemplateName = 'AvqJQ.render';
 }
 
-
-/**
- * @param {{
- *    page: (?),
- *    site: (?)
- * }} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $topics(opt_data, opt_ignored, opt_ijData) {
-  var $$temp;
-  ie_open('div', null, null,
-      'class', 'sidebar-offset');
-    ie_open('div', null, null,
-        'class', 'container-hybrid docs-home-top');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-xs-16');
-          ie_open('h1', null, null,
-              'class', 'docs-home-top-title');
-            itext('Docs');
-          ie_close('h1');
-          ie_open('p', null, null,
-              'class', 'docs-home-top-description');
-            itext('Start learning how to leverage the power of ');
-            var dyn17 = opt_data.site.title;
-            if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
-            itext('.');
-          ie_close('p');
-        ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'container-hybrid docs-home-top-form');
-          ie_open('form', null, null,
-              'action', '/docs/search.html',
-              'method', 'GET',
-              'enctype', 'multipart/form-data');
-            ie_open('div', null, null,
-                'class', 'row');
-              ie_open('div', null, null,
-                  'class', 'col-xs-14 col-xs-offset-1 col-md-10 col-md-offset-3 col-lg-6 col-lg-offset-5');
-                ie_open('div', null, null,
-                    'class', 'search');
-                  $templateAlias3({dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', maxResults: 3, path: '/docs/', placeholder: 'Search Docs'}, null, opt_ijData);
-                ie_close('div');
-              ie_close('div');
-            ie_close('div');
-          ie_close('form');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-    ie_open('div', null, null,
-        'class', 'docs-home-topics');
-      ie_open('div', null, null,
-          'class', 'container-hybrid');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-xs-14 col-xs-offset-1 ');
-            ie_open('section', null, null,
-                'class', 'docs-home-middle');
-              ie_open('h2', null, null,
-                  'class', 'docs-home-middle-subtitle');
-                itext('Choose a Guide');
-              ie_close('h2');
-              ie_open('p', null, null,
-                  'class', 'docs-home-middle-description');
-                itext('Each one provide step by step coverage for every core feature.');
-              ie_close('p');
-            ie_close('section');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-md-12 col-md-offset-2 col-xs-16');
-            ie_open('div', null, null,
-                'class', 'row');
-              var childIdList252 = opt_data.page.childIds;
-              var childIdListLen252 = childIdList252.length;
-              for (var childIdIndex252 = 0; childIdIndex252 < childIdListLen252; childIdIndex252++) {
-                var childIdData252 = childIdList252[childIdIndex252];
-                var topic__soy242 = opt_data.page.children[childIdData252];
-                if (! topic__soy242.hidden) {
-                  ie_open('div', null, null,
-                      'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
-                    ie_open('a', null, null,
-                        'class', 'topic radial-out',
-                        'href', topic__soy242.url);
-                      ie_open('div', null, null,
-                          'class', 'topic-icon');
-                        ie_void('span', null, null,
-                            'class', 'icon-16-' + topic__soy242.icon);
-                      ie_close('div');
-                      ie_open('h3', null, null,
-                          'class', 'topic-title');
-                        var dyn18 = topic__soy242.title;
-                        if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
-                      ie_close('h3');
-                    ie_close('a');
-                  ie_close('div');
-                }
-              }
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.topics = $topics;
-if (goog.DEBUG) {
-  $topics.soyTemplateName = 'pageDocsIndex.topics';
-}
-
-exports.render.params = ["site"];
-exports.render.types = {"site":"?"};
-exports.topics.params = ["page","site"];
-exports.topics.types = {"page":"?","site":"?"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageDocsIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templates);
+class AvqJQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AvqJQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
 /* 321 */,
 /* 322 */,
 /* 323 */,
 /* 324 */,
 /* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31520,9 +31747,9 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _indexSoy = __webpack_require__(314);
+var _othersSoy = __webpack_require__(320);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _othersSoy2 = _interopRequireDefault(_othersSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31532,23 +31759,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsIndex = function (_Component) {
-  _inherits(pageDocsIndex, _Component);
+var AvqJQ = function (_Component) {
+  _inherits(AvqJQ, _Component);
 
-  function pageDocsIndex() {
-    _classCallCheck(this, pageDocsIndex);
+  function AvqJQ() {
+    _classCallCheck(this, AvqJQ);
 
-    return _possibleConstructorReturn(this, (pageDocsIndex.__proto__ || Object.getPrototypeOf(pageDocsIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AvqJQ.__proto__ || Object.getPrototypeOf(AvqJQ)).apply(this, arguments));
   }
 
-  return pageDocsIndex;
+  return AvqJQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
+_metalSoy2.default.register(AvqJQ, _othersSoy2.default);
 
-exports.default = pageDocsIndex;
+exports.default = AvqJQ;
 
 /***/ })
-],[335]);
+],[326]);

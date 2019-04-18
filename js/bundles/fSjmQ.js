@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,12,13,14,15,16],[
+webpackJsonppageComponent([7,12,13,14,15,16],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31239,12 +31239,16 @@ exports.default = parseFromAnchor;
 /* 311 */,
 /* 312 */,
 /* 313 */,
-/* 314 */
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsIndex", function() { return pageDocsIndex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fSjmQ", function() { return fSjmQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31260,22 +31264,20 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageDocsIndex.
+ * @fileoverview Templates in namespace fSjmQ.
  * @public
  */
 
-goog.module('pageDocsIndex.incrementaldom');
+goog.module('fSjmQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
 /** @suppress {extraRequire} */
 var soydata = goog.require('soydata');
 /** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('soy.asserts');
-/** @suppress {extraRequire} */
 goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
 /** @suppress {extraRequire} */
 goog.require('goog.string');
 var IncrementalDom = goog.require('incrementaldom');
@@ -31287,183 +31289,236 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricSearchAutocomplete.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Sidebar.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
- * @param {{
- *    site: (?),
- *    page: (?)
- * }} opt_data
+ * @param {Object<string, *>=} opt_data
  * @param {(null|undefined)=} opt_ignored
  * @param {Object<string, *>=} opt_ijData
  * @return {void}
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  ie_open('div', null, null,
-      'class', 'main');
-    ie_open('main', null, null,
-        'class', 'content');
-      ie_open('div', null, null,
-          'class', 'docs');
-        $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.title, icon: 'icon-16-code-file'}}, null, opt_ijData);
-        $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
-        $topics(opt_data, null, opt_ijData);
-      ie_close('div');
-    ie_close('main');
-  ie_close('div');
+  var param352 = function() {
+    ie_open('h6');
+      var dyn23 = opt_data.page.description;
+      if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('h2');
+        itext('Getting started');
+      ie_close('h2');
+      ie_open('p');
+        itext('Download Nix from ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/aurumsoftware/nix',
+            'target', '_blank');
+          itext('repository');
+        ie_close('a');
+        itext(' or install the package ');
+        ie_open('code');
+          itext('aurum-nix');
+        ie_close('code');
+        itext(':');
+      ie_close('p');
+      $templateAlias2({code: 'yarn add aurum-nix', mode: 'shel'}, null, opt_ijData);
+      ie_open('p');
+        itext('and import into your project:');
+      ie_close('p');
+      $templateAlias2({code: '<link rel="stylesheet" type="text/css" href="node_modules/aurum-nix/dist/nix.min.css" />', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Usage');
+      ie_close('h2');
+      ie_open('p');
+        itext('Write the classes as you would write css properties and values separating with ');
+        ie_open('code');
+          itext('_');
+        ie_close('code');
+        itext(' between properties and the values.');
+      ie_close('p');
+      ie_open('p');
+        itext('By default, the classes have a prefix ');
+        ie_open('code');
+          itext('nix-');
+        ie_close('code');
+        itext(' that you should apply before the class name.');
+      ie_close('p');
+      ie_open('p');
+        itext('You can use the responsive classes with the suffix ');
+        ie_open('code');
+          itext('--xs');
+        ie_close('code');
+        itext(' for screens up to 768px (mobile), ');
+        ie_open('code');
+          itext('--sm');
+        ie_close('code');
+        itext(' for screens up to 1024px (tablets and small screens), ');
+        ie_open('code');
+          itext('--md');
+        ie_close('code');
+        itext(' for screens up to 1200px (medium screens) and ');
+        ie_open('code');
+          itext('--lg');
+        ie_close('code');
+        itext(' for screens up to 1600px (large screens).');
+      ie_close('p');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Customization');
+      ie_close('h2');
+      ie_open('p');
+        itext('You can customize it for your own project, change the values of variables then import the Nix file ');
+        ie_open('code');
+          itext('node_modules/aurum-nix/nix');
+        ie_close('code');
+        itext(' in your Sass file.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('br');
+        ie_close('br');
+      ie_close('p');
+      ie_open('h3');
+        itext('Prefix variable');
+      ie_close('h3');
+      ie_open('p');
+        itext('Change the prefix name to your preferred:');
+      ie_close('p');
+      $templateAlias2({code: '$prefix: \'nix-\'; // nix- is default', mode: 'sass'}, null, opt_ijData);
+      ie_open('p');
+        itext('In this example, your class will be ');
+        ie_open('code');
+          itext('nix-diplay_block');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        itext('or set the prefix to a blank value:');
+      ie_close('p');
+      $templateAlias2({code: '$prefix: \'\';', mode: 'sass'}, null, opt_ijData);
+      ie_open('p');
+        itext('With this example, your class name will be ');
+        ie_open('code');
+          itext('diplay_block');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('br');
+        ie_close('br');
+      ie_close('p');
+      ie_open('h3');
+        itext('Breakpoints variables');
+      ie_close('h3');
+      $templateAlias2({code: '$xs: 768px; // screens up to 768px (mobile)\n$sm: 1024px; // screens up to 1024px (tablet/small desktops)\n$md: 1200px; // screens up to 1200px (medium desktops)\n$lg: 1600px; // screens up to 1600px (large desktops)', mode: 'sass'}, null, opt_ijData);
+      ie_open('p');
+        ie_open('br');
+        ie_close('br');
+      ie_close('p');
+      ie_open('h3');
+        itext('Sizes variables');
+      ie_close('h3');
+      ie_open('p');
+        itext('These sizes are used for margins and paddings:');
+      ie_close('p');
+      $templateAlias2({code: '$int-size: 5; // every 5px\n$max-size: 100; // up to 100px', mode: 'sass'}, null, opt_ijData);
+      ie_open('p');
+        ie_open('code');
+          itext('$int-size');
+        ie_close('code');
+        itext(' is the interval variable to sizes, and ');
+        ie_open('code');
+          itext('$max-size');
+        ie_close('code');
+        itext(' is the max size to generate.');
+      ie_close('p');
+      ie_open('p');
+        ie_open('br');
+        ie_close('br');
+      ie_close('p');
+      ie_open('h3');
+        itext('Generate your custom values');
+      ie_close('h3');
+      ie_open('ol');
+        ie_open('li');
+          itext('Clone the ');
+          ie_open('a', null, null,
+              'href', 'https://github.com/aurumsoftware/nix',
+              'target', '_blank');
+            itext('Nix repository');
+          ie_close('a');
+          itext(';');
+        ie_close('li');
+        ie_open('li');
+          itext('Install ');
+          ie_open('code');
+            itext('gulp-cli');
+          ie_close('code');
+          itext(';');
+        ie_close('li');
+        ie_open('li');
+          itext('Run ');
+          ie_open('code');
+            itext('yarn');
+          ie_close('code');
+          itext(' or ');
+          ie_open('code');
+            itext('npm instal');
+          ie_close('code');
+          itext(';');
+        ie_close('li');
+        ie_open('li');
+          itext('Run ');
+          ie_open('code');
+            itext('gulp');
+          ie_close('code');
+          itext(' to build or ');
+          ie_open('code');
+            itext('gulp watch');
+          ie_close('code');
+          itext(' to watch the changes;');
+        ie_close('li');
+      ie_close('ol');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
+  };
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsIndex.render';
+  $render.soyTemplateName = 'fSjmQ.render';
 }
 
-
-/**
- * @param {{
- *    page: (?),
- *    site: (?)
- * }} opt_data
- * @param {(null|undefined)=} opt_ignored
- * @param {Object<string, *>=} opt_ijData
- * @return {void}
- * @suppress {checkTypes}
- */
-function $topics(opt_data, opt_ignored, opt_ijData) {
-  var $$temp;
-  ie_open('div', null, null,
-      'class', 'sidebar-offset');
-    ie_open('div', null, null,
-        'class', 'container-hybrid docs-home-top');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'col-xs-16');
-          ie_open('h1', null, null,
-              'class', 'docs-home-top-title');
-            itext('Docs');
-          ie_close('h1');
-          ie_open('p', null, null,
-              'class', 'docs-home-top-description');
-            itext('Start learning how to leverage the power of ');
-            var dyn17 = opt_data.site.title;
-            if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
-            itext('.');
-          ie_close('p');
-        ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null,
-          'class', 'row');
-        ie_open('div', null, null,
-            'class', 'container-hybrid docs-home-top-form');
-          ie_open('form', null, null,
-              'action', '/docs/search.html',
-              'method', 'GET',
-              'enctype', 'multipart/form-data');
-            ie_open('div', null, null,
-                'class', 'row');
-              ie_open('div', null, null,
-                  'class', 'col-xs-14 col-xs-offset-1 col-md-10 col-md-offset-3 col-lg-6 col-lg-offset-5');
-                ie_open('div', null, null,
-                    'class', 'search');
-                  $templateAlias3({dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', maxResults: 3, path: '/docs/', placeholder: 'Search Docs'}, null, opt_ijData);
-                ie_close('div');
-              ie_close('div');
-            ie_close('div');
-          ie_close('form');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-    ie_open('div', null, null,
-        'class', 'docs-home-topics');
-      ie_open('div', null, null,
-          'class', 'container-hybrid');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-xs-14 col-xs-offset-1 ');
-            ie_open('section', null, null,
-                'class', 'docs-home-middle');
-              ie_open('h2', null, null,
-                  'class', 'docs-home-middle-subtitle');
-                itext('Choose a Guide');
-              ie_close('h2');
-              ie_open('p', null, null,
-                  'class', 'docs-home-middle-description');
-                itext('Each one provide step by step coverage for every core feature.');
-              ie_close('p');
-            ie_close('section');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-md-12 col-md-offset-2 col-xs-16');
-            ie_open('div', null, null,
-                'class', 'row');
-              var childIdList252 = opt_data.page.childIds;
-              var childIdListLen252 = childIdList252.length;
-              for (var childIdIndex252 = 0; childIdIndex252 < childIdListLen252; childIdIndex252++) {
-                var childIdData252 = childIdList252[childIdIndex252];
-                var topic__soy242 = opt_data.page.children[childIdData252];
-                if (! topic__soy242.hidden) {
-                  ie_open('div', null, null,
-                      'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
-                    ie_open('a', null, null,
-                        'class', 'topic radial-out',
-                        'href', topic__soy242.url);
-                      ie_open('div', null, null,
-                          'class', 'topic-icon');
-                        ie_void('span', null, null,
-                            'class', 'icon-16-' + topic__soy242.icon);
-                      ie_close('div');
-                      ie_open('h3', null, null,
-                          'class', 'topic-title');
-                        var dyn18 = topic__soy242.title;
-                        if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
-                      ie_close('h3');
-                    ie_close('a');
-                  ie_close('div');
-                }
-              }
-            ie_close('div');
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
-  ie_close('div');
-}
-exports.topics = $topics;
-if (goog.DEBUG) {
-  $topics.soyTemplateName = 'pageDocsIndex.topics';
-}
-
-exports.render.params = ["site"];
-exports.render.types = {"site":"?"};
-exports.topics.params = ["page","site"];
-exports.topics.types = {"page":"?","site":"?"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageDocsIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templates);
+class fSjmQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fSjmQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
 /* 319 */,
 /* 320 */,
 /* 321 */,
@@ -31477,10 +31532,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 /* 329 */,
 /* 330 */,
 /* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31520,7 +31572,7 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _indexSoy = __webpack_require__(314);
+var _indexSoy = __webpack_require__(318);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -31532,23 +31584,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsIndex = function (_Component) {
-  _inherits(pageDocsIndex, _Component);
+var fSjmQ = function (_Component) {
+  _inherits(fSjmQ, _Component);
 
-  function pageDocsIndex() {
-    _classCallCheck(this, pageDocsIndex);
+  function fSjmQ() {
+    _classCallCheck(this, fSjmQ);
 
-    return _possibleConstructorReturn(this, (pageDocsIndex.__proto__ || Object.getPrototypeOf(pageDocsIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (fSjmQ.__proto__ || Object.getPrototypeOf(fSjmQ)).apply(this, arguments));
   }
 
-  return pageDocsIndex;
+  return fSjmQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
+_metalSoy2.default.register(fSjmQ, _indexSoy2.default);
 
-exports.default = pageDocsIndex;
+exports.default = fSjmQ;
 
 /***/ })
-],[335]);
+],[332]);
