@@ -1,0 +1,25 @@
+$prefix: 'nix-' !default;
+
+$xs: 768px !default;
+$sm: 1024px !default;
+$md: 1200px !default;
+$lg: 1600px !default;
+
+$suffix: 'lg', 'md', 'sm', 'xs' !default;
+
+@mixin for-size($range) {
+  @if $range == xs {
+    @media screen and (max-width: $xs - 1 ) { @content; }
+  } @else if $range == sm {
+    @media screen and (max-width: $sm - 1) { @content; }
+  } @else if $range == md {
+    @media screen and (max-width: $md - 1) { @content; }
+  } @else if $range == lg {
+    @media screen and (max-width: $lg - 1) { @content; }
+  }
+}
+
+/* Interval sizes in px */
+$int-size: 5 !default; // interval (eg: 5, 10, 15, 20, 25...)
+$max-size: 100 !default; // max size
+$measure: 'px' !default; // measure type
