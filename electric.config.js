@@ -10,7 +10,7 @@ module.exports = {
 	vendorSrc: ['node_modules/marble/build/fonts/**'],
 	codeMirrorLanguages: ['xml', 'css', 'javascript', 'shell', 'sass'],
 	codeMirrorTheme: 'monokai',
-	pathDest: 'docs',
+	pathDest: 'dist-docs',
 	deployOptions: {
 		branch: 'netlify'
 	}
