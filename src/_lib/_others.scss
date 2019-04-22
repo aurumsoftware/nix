@@ -1,10 +1,5 @@
 @import 'variables';
 
-// white-space
-.#{$prefix}white-space_normal { white-space: normal !important; }
-.#{$prefix}white-space_nowrap { white-space: nowrap !important; }
-.#{$prefix}white-space_pre { white-space: pre !important; }
-
 // overflow
 .#{$prefix}overflow_auto { overflow: auto !important; }
 .#{$prefix}overflow_hidden { overflow: hidden !important; }
@@ -18,10 +13,6 @@
 
 @for $indexSuffix from 1 through length($suffix) {
   @include for-size( nth($suffix, $indexSuffix) ){
-    .#{$prefix}white-space_normal--#{nth($suffix, $indexSuffix)} { white-space: normal !important; }
-    .#{$prefix}white-space_nowrap--#{nth($suffix, $indexSuffix)} { white-space: nowrap !important; }
-    .#{$prefix}white-space_pre--#{nth($suffix, $indexSuffix)} { white-space: pre !important; }
-
     .#{$prefix}overflow_auto--#{nth($suffix, $indexSuffix)} { overflow: auto !important; }
     .#{$prefix}overflow_hidden--#{nth($suffix, $indexSuffix)} { overflow: hidden !important; }
     .#{$prefix}overflow_scroll--#{nth($suffix, $indexSuffix)} { overflow: scroll !important; }
