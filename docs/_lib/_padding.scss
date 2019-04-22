@@ -1,0 +1,23 @@
+@import 'variables';
+
+$props: '', '-top', '-bottom', '-left', '-right';
+
+@for $indexProps from 1 through length($props) {
+  $countDefault: 0;
+  @while $countDefault <= $max-size {
+    .#{$prefix}padding#{nth($props, $indexProps)}_#{$countDefault} { padding#{nth($props, $indexProps)}: $countDefault#{$measure} !important }
+    $countDefault: $countDefault + 5;
+  }
+}
+
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    @for $indexProps from 1 through length($props) {
+      $countDefault: 0;
+      @while $countDefault <= $max-size {
+        .#{$prefix}padding#{nth($props, $indexProps)}_#{$countDefault}--#{nth($suffix, $indexSuffix)} { padding#{nth($props, $indexProps)}: $countDefault#{$measure} !important }
+        $countDefault: $countDefault + 5;
+      }
+    }
+  }
+}

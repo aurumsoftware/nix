@@ -1,0 +1,45 @@
+@import 'variables';
+
+// overflow
+.#{$prefix}overflow_auto { overflow: auto !important; }
+.#{$prefix}overflow_hidden { overflow: hidden !important; }
+.#{$prefix}overflow_scroll { overflow: scroll !important; }
+.#{$prefix}overflow_visible { overflow: visible !important; }
+
+// cursor
+.#{$prefix}cursor_default { cursor: default !important; }
+.#{$prefix}cursor_pointer { cursor: pointer !important; }
+.#{$prefix}cursor_not-allowed { cursor: not-allowed !important; }
+
+// opacity
+.#{$prefix}opacity_0 { opacity: 0 !important; }
+.#{$prefix}opacity_1 { opacity: 1 !important; }
+
+// object-fit
+.#{$prefix}object-fit_fill { object-fit: fill !important; }
+.#{$prefix}object-fit_contain { object-fit: contain !important; }
+.#{$prefix}object-fit_cover { object-fit: cover !important; }
+.#{$prefix}object-fit_scale-down { object-fit: scale-down !important; }
+.#{$prefix}object-fit_none { object-fit: none !important; }
+
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    .#{$prefix}overflow_auto--#{nth($suffix, $indexSuffix)} { overflow: auto !important; }
+    .#{$prefix}overflow_hidden--#{nth($suffix, $indexSuffix)} { overflow: hidden !important; }
+    .#{$prefix}overflow_scroll--#{nth($suffix, $indexSuffix)} { overflow: scroll !important; }
+    .#{$prefix}overflow_visible--#{nth($suffix, $indexSuffix)} { overflow: visible !important; }
+
+    .#{$prefix}cursor_default--#{nth($suffix, $indexSuffix)} { cursor: default !important; }
+    .#{$prefix}cursor_pointer--#{nth($suffix, $indexSuffix)} { cursor: pointer !important; }
+    .#{$prefix}cursor_not-allowed--#{nth($suffix, $indexSuffix)} { cursor: not-allowed !important; }
+
+    .#{$prefix}opacity_0--#{nth($suffix, $indexSuffix)} { opacity: 0 !important; }
+    .#{$prefix}opacity_1--#{nth($suffix, $indexSuffix)} { opacity: 1 !important; }
+
+    .#{$prefix}object-fit_fill--#{nth($suffix, $indexSuffix)} { object-fit: fill !important; }
+    .#{$prefix}object-fit_contain--#{nth($suffix, $indexSuffix)} { object-fit: contain !important; }
+    .#{$prefix}object-fit_cover--#{nth($suffix, $indexSuffix)} { object-fit: cover !important; }
+    .#{$prefix}object-fit_scale-down--#{nth($suffix, $indexSuffix)} { object-fit: scale-down !important; }
+    .#{$prefix}object-fit_none--#{nth($suffix, $indexSuffix)} { object-fit: none !important; }
+  }
+}
