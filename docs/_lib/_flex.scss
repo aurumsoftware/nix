@@ -35,6 +35,14 @@
 .#{$prefix}flex-wrap_nowrap { flex-wrap: nowrap !important }
 .#{$prefix}flex-wrap_reverse { flex-wrap: wrap-reverse !important }
 
+.#{$prefix}flex_none { flex: none !important }
+.#{$prefix}flex_0 { flex: 0 !important }
+.#{$prefix}flex_1 { flex: 1 !important }
+
+@for $i from 0 through 5 {
+  .#{$prefix}order_#{$i} { order: #{$i} !important }
+}
+
 @for $indexSuffix from 1 through length($suffix) {
   @include for-size( nth($suffix, $indexSuffix) ){
     .#{$prefix}justify-content_start--#{nth($suffix, $indexSuffix)} { justify-content: flex-start !important }
@@ -71,5 +79,13 @@
     .#{$prefix}flex-wrap_wrap--#{nth($suffix, $indexSuffix)} { flex-wrap: wrap !important }
     .#{$prefix}flex-wrap_nowrap--#{nth($suffix, $indexSuffix)} { flex-wrap: nowrap !important }
     .#{$prefix}flex-wrap_reverse--#{nth($suffix, $indexSuffix)} { flex-wrap: wrap-reverse !important }
+
+    .#{$prefix}flex_none--#{nth($suffix, $indexSuffix)} { flex: none !important }
+    .#{$prefix}flex_0--#{nth($suffix, $indexSuffix)} { flex: 0 !important }
+    .#{$prefix}flex_1--#{nth($suffix, $indexSuffix)} { flex: 1 !important }
+
+    @for $i from 0 through 5 {
+      .#{$prefix}order_#{$i}--#{nth($suffix, $indexSuffix)} { order: #{$i} !important }
+    }
   }
 }

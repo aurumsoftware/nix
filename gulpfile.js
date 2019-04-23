@@ -5,7 +5,7 @@ const autoprefixer 	= require('gulp-autoprefixer')
 const concat 				= require('gulp-concat')
 
 gulp.task('compile', function() {
-  gulp.src('src/nix.scss')
+  gulp.src('src/_lib/nix.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssmin())
@@ -16,5 +16,5 @@ gulp.task('compile', function() {
 gulp.task('default', ['compile'])
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/**/*.scss', './nix.scss'], ['compile'])
+  gulp.watch(['./src/_lib/**/*.scss'], ['compile'])
 })
