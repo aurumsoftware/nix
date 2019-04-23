@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,13,14,15,16,17],[
+webpackJsonppageComponent([10,13,14,15,16,17],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31241,21 +31241,12 @@ exports.default = parseFromAnchor;
 /* 313 */,
 /* 314 */,
 /* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */
+/* 316 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsSearch", function() { return pageDocsSearch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ownph", function() { return Ownph; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31267,26 +31258,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from search.soy.
+// This file was automatically generated from flexbox.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageDocsSearch.
+ * @fileoverview Templates in namespace Ownph.
  * @public
  */
 
-goog.module('pageDocsSearch.incrementaldom');
+goog.module('Ownph.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
 /** @suppress {extraRequire} */
 var soydata = goog.require('soydata');
 /** @suppress {extraRequire} */
-goog.require('goog.asserts');
-/** @suppress {extraRequire} */
-goog.require('soy.asserts');
-/** @suppress {extraRequire} */
 goog.require('goog.i18n.bidi');
+/** @suppress {extraRequire} */
+goog.require('goog.asserts');
 /** @suppress {extraRequire} */
 goog.require('goog.string');
 var IncrementalDom = goog.require('incrementaldom');
@@ -31298,95 +31287,756 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricSearch.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Sidebar.incrementaldom', 'render');
-
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('main.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
- * @param {{
- *    site: (?)
- * }} opt_data
+ * @param {Object<string, *>=} opt_data
  * @param {(null|undefined)=} opt_ignored
  * @param {Object<string, *>=} opt_ijData
  * @return {void}
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var $$temp;
-  var param258 = function() {
-    $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
-    ie_open('div', null, null,
-        'class', 'sidebar-offset');
-      ie_open('div', null, null,
-          'class', 'container-hybrid docs-home-top');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-xs-16');
-            ie_open('h1', null, null,
-                'class', 'docs-home-top-title');
-              ie_open('span');
-                itext('Electric');
-              ie_close('span');
-              itext(' Docs');
-            ie_close('h1');
-            ie_open('p', null, null,
-                'class', 'docs-home-top-description');
-              itext('Start learning how to leverage the power of ');
-              var dyn19 = opt_data.site.title;
-              if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
-              itext('.');
-            ie_close('p');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'container-hybrid');
-            $templateAlias3({action: '/docs/search.html', dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', path: '/docs/', placeholder: 'Search Docs'}, null, opt_ijData);
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
+  var param288 = function() {
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('p');
+        itext('These properties require ');
+        ie_open('code');
+          itext('display: flex');
+        ie_close('code');
+        itext(' in the parent for working.');
+      ie_close('p');
+      ie_open('p');
+        itext('Learn flexbox with ');
+        ie_open('a', null, null,
+            'href', 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',
+            'target', '_blank');
+          itext('this guide');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+      ie_open('h2');
+        itext('justify-content');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_start');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the beginning of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_end');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the end of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_between');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned with space between the lines');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_around');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned with space before, between, and after the lines');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_center');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the center of the container');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-justify-content_center"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('align-item');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_stretch');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are stretched to fit the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_start');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the beginning of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_end');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the end of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_center');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the center of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_baseline');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Items are positioned at the baseline of the container');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-align-items_center"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '4');
+      ie_open('h2');
+        itext('align-content');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_stretch');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines stretch to take up the remaining space');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_start');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines are packed toward the start of the flex container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_end');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines are packed toward the end of the flex container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_center');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines are packed toward the center of the flex container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_between');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines are evenly distributed in the flex container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-content_arround');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Lines are evenly distributed in the flex container, with half-size spaces on either end');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-align-content_center"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '5');
+      ie_open('h2');
+        itext('align-self');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_stretch');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is positioned to fit the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_auto');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element inherits its parent container\'s align-items property, or "stretch" if it has no parent container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_start');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is positioned at the beginning of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_end');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is positioned at the end of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_center');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is positioned at the center of the container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-self_baseline');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element is positioned at the baseline of the container');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-align-self_center"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '6');
+      ie_open('h2');
+        itext('flex-direction');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-direction_column');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The flexible items are displayed vertically, as a column');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-direction_column-reverse');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Same as column, but in reverse order');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-direction_row');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The flexible items are displayed horizontally, as a row');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-direction_row-reverse');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Same as row, but in reverse order');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-flex-direction_column"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '7');
+      ie_open('h2');
+        itext('flex-wrap');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-wrap_wrap');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Specifies that the flexible items will wrap if necessary');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-wrap_nowrap');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Specifies that the flexible items will not wrap');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-wrap_wrap-reverse');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Specifies that the flexible items will wrap, if necessary, in reverse order');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-flex-wrap_wrap"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '8');
+      ie_open('h2');
+        itext('flex');
+      ie_close('h2');
+      ie_open('p');
+        itext('This defines the size of an element before the remaining space is distributed.');
+      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex_auto');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Defines an automatic size');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex_0');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Defines a minimum size');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex_1');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Defines all available space');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-flex_1"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '9');
+      ie_open('h2');
+        itext('order');
+      ie_close('h2');
+      ie_open('p');
+        ie_open('code');
+          itext('order');
+        ie_close('code');
+        itext(' defines the order of an element from 0 until 5.');
+      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-order_0');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Default');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('...');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('...');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-order_5');
+              ie_close('code');
+            ie_close('td');
+            ie_void('td', null, null,
+                'style', 'text-align:left');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-flex_1"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '10');
+      ie_open('h2');
+        itext('Responsive example');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-align-items_center--xs');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--xs');
+              ie_close('code');
+              itext(' suffix only affects device widths of 768px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-justify-content_middle--sm');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--sm');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1024px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-flex-direction_column--md');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--md');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1200px and lower.');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param258}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param288}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsSearch.render';
+  $render.soyTemplateName = 'Ownph.render';
 }
 
-exports.render.params = ["site"];
-exports.render.types = {"site":"?"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageDocsSearch extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templates);
+class Ownph extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Ownph, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
 /* 326 */,
 /* 327 */,
 /* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31426,9 +32076,9 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _searchSoy = __webpack_require__(325);
+var _flexboxSoy = __webpack_require__(316);
 
-var _searchSoy2 = _interopRequireDefault(_searchSoy);
+var _flexboxSoy2 = _interopRequireDefault(_flexboxSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31438,23 +32088,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var Ownph = function (_Component) {
+  _inherits(Ownph, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function Ownph() {
+    _classCallCheck(this, Ownph);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Ownph.__proto__ || Object.getPrototypeOf(Ownph)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return Ownph;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
+_metalSoy2.default.register(Ownph, _flexboxSoy2.default);
 
-exports.default = pageDocsSearch;
+exports.default = Ownph;
 
 /***/ })
-],[338]);
+],[329]);

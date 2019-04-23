@@ -19,6 +19,15 @@
 .#{$prefix}font-style_italic { font-style: italic !important }
 .#{$prefix}font-style_oblique { font-style: oblique !important }
 
+.#{$prefix}text-overflow_clip { text-overflow: clip !important; }
+.#{$prefix}text-overflow_ellipsis { text-overflow: ellipsis !important; }
+.#{$prefix}text-overflow_initial { text-overflow: initial !important; }
+.#{$prefix}text-overflow_inherit { text-overflow: inherit !important; }
+
+.#{$prefix}white-space_normal { white-space: normal !important; }
+.#{$prefix}white-space_nowrap { white-space: nowrap !important; }
+.#{$prefix}white-space_pre { white-space: pre !important; }
+
 @for $indexSuffix from 1 through length($suffix) {
   @include for-size( nth($suffix, $indexSuffix) ){
     .#{$prefix}text-align_left--#{nth($suffix, $indexSuffix)} { text-align: left !important }
@@ -39,5 +48,14 @@
     .#{$prefix}font-style_normal--#{nth($suffix, $indexSuffix)} { font-style: normal !important }
     .#{$prefix}font-style_italic--#{nth($suffix, $indexSuffix)} { font-style: italic !important }
     .#{$prefix}font-style_oblique--#{nth($suffix, $indexSuffix)} { font-style: oblique !important }
+
+    .#{$prefix}text-overflow_clip--#{nth($suffix, $indexSuffix)} { text-overflow: clip !important; }
+    .#{$prefix}text-overflow_ellipsis--#{nth($suffix, $indexSuffix)} { text-overflow: ellipsis !important; }
+    .#{$prefix}text-overflow_initial--#{nth($suffix, $indexSuffix)} { text-overflow: initial !important; }
+    .#{$prefix}text-overflow_inherit--#{nth($suffix, $indexSuffix)} { text-overflow: inherit !important; }
+
+    .#{$prefix}white-space_normal--#{nth($suffix, $indexSuffix)} { white-space: normal !important; }
+    .#{$prefix}white-space_nowrap--#{nth($suffix, $indexSuffix)} { white-space: nowrap !important; }
+    .#{$prefix}white-space_pre--#{nth($suffix, $indexSuffix)} { white-space: pre !important; }
   }
 }

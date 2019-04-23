@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([15],{
+webpackJsonppageComponent([16],{
 
 /***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
@@ -152,30 +152,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList166 = opt_data.posts;
-        var postListLen166 = postList166.length;
-        for (var postIndex166 = 0; postIndex166 < postListLen166; postIndex166++) {
-          var postData166 = postList166[postIndex166];
+        var postList33 = opt_data.posts;
+        var postListLen33 = postList33.length;
+        for (var postIndex33 = 0; postIndex33 < postListLen33; postIndex33++) {
+          var postData33 = postList33[postIndex33];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData166.url);
+                'href', postData33.url);
               ie_open('small');
                 itext('By ');
-                var dyn12 = postData166.author;
-                if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+                var dyn0 = postData33.author;
+                if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn13 = postData166.date;
-                  if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+                  var dyn1 = postData33.date;
+                  if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn14 = postData166.title;
-                if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+                var dyn2 = postData33.title;
+                if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
               ie_close('h4');
             ie_close('a');
           ie_close('div');

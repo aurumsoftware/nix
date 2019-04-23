@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,12,13,14,15,16],[
+webpackJsonppageComponent([9,13,14,15,16,17],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20471,14 +20471,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param18 = function() {
+  var param89 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param18}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param89}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20503,24 +20503,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn5 = opt_data.page.author;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn6 = opt_data.page.date;
+          if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn7 = opt_data.page.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn8 = opt_data.content;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20542,8 +20542,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy38 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy38, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy109 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy109, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20675,8 +20675,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' guide');
         ie_close('h1');
       ie_close('div');
@@ -20689,8 +20689,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn5 = opt_data.content;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20839,8 +20839,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title}}, null, opt_ijData);
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -20973,14 +20973,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn8 = opt_data.content;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -21005,15 +21005,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy117 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy117.childIds.length) {
+    var tutorialObject__soy188 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy188.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy122 = tutorialObject__soy117.children[tutorialObject__soy117.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy193 = tutorialObject__soy188.children[tutorialObject__soy188.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy122,
+            'href', nextPageUrl__soy193,
             'class', 'btn btn-accent btn-sm');
-          var dyn9 = opt_data.page.buttonTitle;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -21058,7 +21058,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s208_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -21067,23 +21067,23 @@ function __deltemplate_s137_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn10 = opt_data.page.weight;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn11 = opt_data.page.title;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s137_88c0813b = __deltemplate_s137_88c0813b;
+exports.__deltemplate_s208_88c0813b = __deltemplate_s208_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s137_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s137_88c0813b';
+  __deltemplate_s208_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s208_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s137_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s208_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21454,30 +21454,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList166 = opt_data.posts;
-        var postListLen166 = postList166.length;
-        for (var postIndex166 = 0; postIndex166 < postListLen166; postIndex166++) {
-          var postData166 = postList166[postIndex166];
+        var postList33 = opt_data.posts;
+        var postListLen33 = postList33.length;
+        for (var postIndex33 = 0; postIndex33 < postListLen33; postIndex33++) {
+          var postData33 = postList33[postIndex33];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData166.url);
+                'href', postData33.url);
               ie_open('small');
                 itext('By ');
-                var dyn12 = postData166.author;
-                if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+                var dyn0 = postData33.author;
+                if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn13 = postData166.date;
-                  if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+                  var dyn1 = postData33.date;
+                  if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn14 = postData166.title;
-                if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+                var dyn2 = postData33.title;
+                if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -21614,7 +21614,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s184_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s51_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -21623,16 +21623,16 @@ function __deltemplate_s184_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn15 = opt_data.page.title;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn3 = opt_data.page.title;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s184_d34389eb = __deltemplate_s184_d34389eb;
+exports.__deltemplate_s51_d34389eb = __deltemplate_s51_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s184_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s184_d34389eb';
+  __deltemplate_s51_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s51_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s184_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s51_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -21830,8 +21830,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn16 = opt_data.time;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn4 = opt_data.time;
+      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
     }
   ie_close('p');
 }
@@ -31242,13 +31242,12 @@ exports.default = parseFromAnchor;
 /* 314 */,
 /* 315 */,
 /* 316 */,
-/* 317 */,
-/* 318 */
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fSjmQ", function() { return fSjmQ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GvkRO", function() { return GvkRO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31260,15 +31259,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from index.soy.
+// This file was automatically generated from float.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace fSjmQ.
+ * @fileoverview Templates in namespace GvkRO.
  * @public
  */
 
-goog.module('fSjmQ.incrementaldom');
+goog.module('GvkRO.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -31302,191 +31301,203 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
-    ie_open('h6');
-      var dyn23 = opt_data.page.description;
-      if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
-    ie_close('h6');
+  var param337 = function() {
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('Getting started');
+        itext('float');
       ie_close('h2');
-      ie_open('p');
-        itext('Download Nix from ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/aurumsoftware/nix',
-            'target', '_blank');
-          itext('repository');
-        ie_close('a');
-        itext(' or install the package ');
-        ie_open('code');
-          itext('aurum-nix');
-        ie_close('code');
-        itext(':');
-      ie_close('p');
-      $templateAlias2({code: 'yarn add aurum-nix', mode: 'shel'}, null, opt_ijData);
-      ie_open('p');
-        itext('and import into your project:');
-      ie_close('p');
-      $templateAlias2({code: '<link rel="stylesheet" type="text/css" href="node_modules/aurum-nix/dist/nix.min.css" />', mode: 'xml'}, null, opt_ijData);
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-float_none');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element does not float, (will be displayed just where it occurs in the text).');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-float_left');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element floats to the left of its container');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-float_right');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('The element floats the right of its container');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-float_left"></div>', mode: 'xml'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
         'id', '2');
       ie_open('h2');
-        itext('Usage');
+        itext('clear');
       ie_close('h2');
-      ie_open('p');
-        itext('Write the classes as you would write css properties and values separating with ');
-        ie_open('code');
-          itext('_');
-        ie_close('code');
-        itext(' between properties and the values.');
-      ie_close('p');
-      ie_open('p');
-        itext('By default, the classes have a prefix ');
-        ie_open('code');
-          itext('nix-');
-        ie_close('code');
-        itext(' that you should apply before the class name.');
-      ie_close('p');
-      ie_open('p');
-        itext('You can use the responsive classes with the suffix ');
-        ie_open('code');
-          itext('--xs');
-        ie_close('code');
-        itext(' for screens up to 768px (mobile), ');
-        ie_open('code');
-          itext('--sm');
-        ie_close('code');
-        itext(' for screens up to 1024px (tablets and small screens), ');
-        ie_open('code');
-          itext('--md');
-        ie_close('code');
-        itext(' for screens up to 1200px (medium screens) and ');
-        ie_open('code');
-          itext('--lg');
-        ie_close('code');
-        itext(' for screens up to 1600px (large screens).');
-      ie_close('p');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_none');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Allows floating elements on both sides');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_both');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on either the left or the right side');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_left');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on the left side');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_right');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on the right side');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-clear_both"></div>', mode: 'xml'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
         'id', '3');
       ie_open('h2');
-        itext('Customization');
+        itext('Responsive example');
       ie_close('h2');
-      ie_open('p');
-        itext('You can customize it for your own project, change the values of variables then import the Nix file ');
-        ie_open('code');
-          itext('node_modules/aurum-nix/nix');
-        ie_close('code');
-        itext(' in your Sass file.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('br');
-        ie_close('br');
-      ie_close('p');
-      ie_open('h3');
-        itext('Prefix variable');
-      ie_close('h3');
-      ie_open('p');
-        itext('Change the prefix name to your preferred:');
-      ie_close('p');
-      $templateAlias2({code: '$prefix: \'nix-\'; // nix- is default', mode: 'sass'}, null, opt_ijData);
-      ie_open('p');
-        itext('In this example, your class will be ');
-        ie_open('code');
-          itext('nix-diplay_block');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        itext('or set the prefix to a blank value:');
-      ie_close('p');
-      $templateAlias2({code: '$prefix: \'\';', mode: 'sass'}, null, opt_ijData);
-      ie_open('p');
-        itext('With this example, your class name will be ');
-        ie_open('code');
-          itext('diplay_block');
-        ie_close('code');
-        itext('.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('br');
-        ie_close('br');
-      ie_close('p');
-      ie_open('h3');
-        itext('Breakpoints variables');
-      ie_close('h3');
-      $templateAlias2({code: '$xs: 768px; // screens up to 768px (mobile)\n$sm: 1024px; // screens up to 1024px (tablet/small desktops)\n$md: 1200px; // screens up to 1200px (medium desktops)\n$lg: 1600px; // screens up to 1600px (large desktops)', mode: 'sass'}, null, opt_ijData);
-      ie_open('p');
-        ie_open('br');
-        ie_close('br');
-      ie_close('p');
-      ie_open('h3');
-        itext('Sizes variables');
-      ie_close('h3');
-      ie_open('p');
-        itext('These sizes are used for margins and paddings:');
-      ie_close('p');
-      $templateAlias2({code: '$int-size: 5; // every 5px\n$max-size: 100; // up to 100px', mode: 'sass'}, null, opt_ijData);
-      ie_open('p');
-        ie_open('code');
-          itext('$int-size');
-        ie_close('code');
-        itext(' is the interval variable to sizes, and ');
-        ie_open('code');
-          itext('$max-size');
-        ie_close('code');
-        itext(' is the max size to generate.');
-      ie_close('p');
-      ie_open('p');
-        ie_open('br');
-        ie_close('br');
-      ie_close('p');
-      ie_open('h3');
-        itext('Generate your custom values');
-      ie_close('h3');
-      ie_open('ol');
-        ie_open('li');
-          itext('Clone the ');
-          ie_open('a', null, null,
-              'href', 'https://github.com/aurumsoftware/nix',
-              'target', '_blank');
-            itext('Nix repository');
-          ie_close('a');
-          itext(';');
-        ie_close('li');
-        ie_open('li');
-          itext('Install ');
-          ie_open('code');
-            itext('gulp-cli');
-          ie_close('code');
-          itext(';');
-        ie_close('li');
-        ie_open('li');
-          itext('Run ');
-          ie_open('code');
-            itext('yarn');
-          ie_close('code');
-          itext(' or ');
-          ie_open('code');
-            itext('npm instal');
-          ie_close('code');
-          itext(';');
-        ie_close('li');
-        ie_open('li');
-          itext('Run ');
-          ie_open('code');
-            itext('gulp');
-          ie_close('code');
-          itext(' to build or ');
-          ie_open('code');
-            itext('gulp watch');
-          ie_close('code');
-          itext(' to watch the changes;');
-        ie_close('li');
-      ie_close('ol');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-float_none--xs');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--xs');
+              ie_close('code');
+              itext(' suffix only affects device widths of 768px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_left--sm');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--sm');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1024px and lower.');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_right--md');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('--md');
+              ie_close('code');
+              itext(' suffix only affects device widths of 1200px and lower.');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -31497,11 +31508,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param337}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'fSjmQ.render';
+  $render.soyTemplateName = 'GvkRO.render';
 }
 
 exports.render.params = ["page","site"];
@@ -31511,14 +31522,15 @@ return exports;
 
 });
 
-class fSjmQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fSjmQ, templates);
+class GvkRO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GvkRO, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 318 */,
 /* 319 */,
 /* 320 */,
 /* 321 */,
@@ -31528,11 +31540,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fSjmQ, templates);
 /* 325 */,
 /* 326 */,
 /* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31572,9 +31580,9 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _indexSoy = __webpack_require__(318);
+var _floatSoy = __webpack_require__(317);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _floatSoy2 = _interopRequireDefault(_floatSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31584,23 +31592,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var fSjmQ = function (_Component) {
-  _inherits(fSjmQ, _Component);
+var GvkRO = function (_Component) {
+  _inherits(GvkRO, _Component);
 
-  function fSjmQ() {
-    _classCallCheck(this, fSjmQ);
+  function GvkRO() {
+    _classCallCheck(this, GvkRO);
 
-    return _possibleConstructorReturn(this, (fSjmQ.__proto__ || Object.getPrototypeOf(fSjmQ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GvkRO.__proto__ || Object.getPrototypeOf(GvkRO)).apply(this, arguments));
   }
 
-  return fSjmQ;
+  return GvkRO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(fSjmQ, _indexSoy2.default);
+_metalSoy2.default.register(GvkRO, _floatSoy2.default);
 
-exports.default = fSjmQ;
+exports.default = GvkRO;
 
 /***/ })
-],[332]);
+],[328]);

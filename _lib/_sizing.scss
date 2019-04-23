@@ -1,0 +1,29 @@
+@import 'variables';
+
+$props: '0', '25', '50', '75', '100';
+
+@for $indexProps from 1 through length($props) {
+  $countDefault: 0;
+  @while $countDefault <= $indexProps {
+    .#{$prefix}width_auto { width: auto !important }
+    .#{$prefix}width_#{nth($props, $indexProps)} { width: #{nth($props, $indexProps)}% !important }
+    .#{$prefix}height_auto { height: auto !important }
+    .#{$prefix}height_#{nth($props, $indexProps)} { height: #{nth($props, $indexProps)}% !important }
+    $countDefault: $countDefault + 1;
+  }
+}
+
+@for $indexSuffix from 1 through length($suffix) {
+  @include for-size( nth($suffix, $indexSuffix) ){
+    @for $indexProps from 1 through length($props) {
+      $countDefault: 0;
+      @while $countDefault <= $indexProps {
+        .#{$prefix}width_auto--#{nth($suffix, $indexSuffix)} { width: auto !important }
+        .#{$prefix}width_#{nth($props, $indexProps)}--#{nth($suffix, $indexSuffix)} { width: #{nth($props, $indexProps)}% !important }
+        .#{$prefix}height_auto--#{nth($suffix, $indexSuffix)} { height: auto !important }
+        .#{$prefix}height_#{nth($props, $indexProps)}--#{nth($suffix, $indexSuffix)} { height: #{nth($props, $indexProps)}% !important }
+        $countDefault: $countDefault + 1;
+      }
+    }
+  }
+}

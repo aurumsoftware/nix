@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,12,13,14,15,16],[
+webpackJsonppageComponent([5,13,14,15,16,17],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20471,14 +20471,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param18 = function() {
+  var param89 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param18}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param89}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20503,24 +20503,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn5 = opt_data.page.author;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn6 = opt_data.page.date;
+          if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn7 = opt_data.page.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn8 = opt_data.content;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20542,8 +20542,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy38 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy38, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy109 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy109, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20675,8 +20675,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn9 = opt_data.page.title;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
           itext(' guide');
         ie_close('h1');
       ie_close('div');
@@ -20689,8 +20689,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn5 = opt_data.content;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn10 = opt_data.content;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20839,8 +20839,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title}}, null, opt_ijData);
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('main');
   ie_close('div');
 }
@@ -20973,14 +20973,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn8 = opt_data.content;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn13 = opt_data.content;
+        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -21005,15 +21005,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy117 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy117.childIds.length) {
+    var tutorialObject__soy188 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy188.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy122 = tutorialObject__soy117.children[tutorialObject__soy117.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy193 = tutorialObject__soy188.children[tutorialObject__soy188.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy122,
+            'href', nextPageUrl__soy193,
             'class', 'btn btn-accent btn-sm');
-          var dyn9 = opt_data.page.buttonTitle;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn14 = opt_data.page.buttonTitle;
+          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
         ie_close('a');
       }
     }
@@ -21058,7 +21058,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s137_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s208_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -21067,23 +21067,23 @@ function __deltemplate_s137_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn10 = opt_data.page.weight;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn15 = opt_data.page.weight;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn11 = opt_data.page.title;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn16 = opt_data.page.title;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s137_88c0813b = __deltemplate_s137_88c0813b;
+exports.__deltemplate_s208_88c0813b = __deltemplate_s208_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s137_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s137_88c0813b';
+  __deltemplate_s208_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s208_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s137_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s208_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21454,30 +21454,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList166 = opt_data.posts;
-        var postListLen166 = postList166.length;
-        for (var postIndex166 = 0; postIndex166 < postListLen166; postIndex166++) {
-          var postData166 = postList166[postIndex166];
+        var postList33 = opt_data.posts;
+        var postListLen33 = postList33.length;
+        for (var postIndex33 = 0; postIndex33 < postListLen33; postIndex33++) {
+          var postData33 = postList33[postIndex33];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData166.url);
+                'href', postData33.url);
               ie_open('small');
                 itext('By ');
-                var dyn12 = postData166.author;
-                if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+                var dyn0 = postData33.author;
+                if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn13 = postData166.date;
-                  if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+                  var dyn1 = postData33.date;
+                  if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn14 = postData166.title;
-                if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+                var dyn2 = postData33.title;
+                if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -21614,7 +21614,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s184_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s51_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -21623,16 +21623,16 @@ function __deltemplate_s184_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn15 = opt_data.page.title;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn3 = opt_data.page.title;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s184_d34389eb = __deltemplate_s184_d34389eb;
+exports.__deltemplate_s51_d34389eb = __deltemplate_s51_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s184_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s184_d34389eb';
+  __deltemplate_s51_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s51_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s184_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s51_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -21830,8 +21830,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn16 = opt_data.time;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn4 = opt_data.time;
+      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
     }
   ie_close('p');
 }
@@ -31246,14 +31246,12 @@ exports.default = parseFromAnchor;
 /* 318 */,
 /* 319 */,
 /* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MmPwp", function() { return MmPwp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rNmHq", function() { return rNmHq; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31265,15 +31263,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from text.soy.
+// This file was automatically generated from padding.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace MmPwp.
+ * @fileoverview Templates in namespace rNmHq.
  * @public
  */
 
-goog.module('MmPwp.incrementaldom');
+goog.module('rNmHq.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -31307,16 +31305,19 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param472 = function() {
+  var param440 = function() {
     ie_open('h6');
-      var dyn28 = opt_data.page.description;
-      if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
+      var dyn21 = opt_data.page.description;
+      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('Text align');
+        itext('padding');
       ie_close('h2');
+      ie_open('p');
+        itext('Default padding sizes range from 0px to 100px, with interval of 5.');
+      ie_close('p');
       ie_open('table');
         ie_open('thead');
           ie_open('tr');
@@ -31335,58 +31336,70 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-align_left');
+                itext('.nix-padding_0');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Aligns the text to the left');
+              itext('Add padding on all sides');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-align_right');
+                itext('.nix-padding-top_5');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Aligns the text to the right');
+              itext('Add top padding');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-align_center');
+                itext('.nix-padding-right_10');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Centers the text');
+              itext('Add right padding');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-align_justify');
+                itext('.nix-padding-bottom_15');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Stretches the lines so that each line has equal width');
+              itext('Add bottom padding');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-padding-left_20');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Add left padding');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
       ie_close('table');
-      $templateAlias2({code: '<div class="nix-text-align_left"></div>', mode: 'xml'}, null, opt_ijData);
+      $templateAlias2({code: '<div class="nix-padding-top_5"></div>', mode: 'xml'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
         'id', '2');
       ie_open('h2');
-        itext('Text transform');
+        itext('Responsive example');
       ie_close('h2');
       ie_open('table');
         ie_open('thead');
@@ -31406,208 +31419,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-transform_none');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('No capitalization. The text renders as it is. This is default');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-text-transform_lowercase');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Transforms all characters to lowercase');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-text-transform_uppercase');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Transforms all characters to uppercase');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-text-transform_capitalize');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Transforms the first character of each word to uppercase');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      $templateAlias2({code: '<div class="nix-text-transform_uppercase"></div>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '3');
-      ie_open('h2');
-        itext('Font weight');
-      ie_close('h2');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('CLASS');
-            ie_close('th');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('DESCRIPTION');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-weight_normal');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Defines normal characters. This is default');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-weight_bold');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Defines thick characters');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-weight_bolder');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Defines thicker characters');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-weight_lighter');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Defines lighter characters');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      $templateAlias2({code: '<div class="nix-font-weight_lighter"></div>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '4');
-      ie_open('h2');
-        itext('Font style');
-      ie_close('h2');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('CLASS');
-            ie_close('th');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('DESCRIPTION');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-style_normal');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('The browser displays a normal font style. This is default');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-style_italic');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('The browser displays an italic font style');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-font-style_oblique');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('The browser displays an oblique font style');
-            ie_close('td');
-          ie_close('tr');
-        ie_close('tbody');
-      ie_close('table');
-      $templateAlias2({code: '<div class="nix-font-weight_lighter"></div>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', '5');
-      ie_open('h2');
-        itext('Responsive examples');
-      ie_close('h2');
-      ie_open('table');
-        ie_open('thead');
-          ie_open('tr');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('CLASS');
-            ie_close('th');
-            ie_open('th', null, null,
-                'style', 'text-align:left');
-              itext('DESCRIPTION');
-            ie_close('th');
-          ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-text-align_center--xs');
+                itext('.nix-padding_0--xs');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31622,7 +31434,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-text-transform_uppercase--sm');
+                itext('.nix-padding-top_5--sm');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31637,7 +31449,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-font-style_italic--md');
+                itext('.nix-padding-right_10--md');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31660,11 +31472,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param472}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param440}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'MmPwp.render';
+  $render.soyTemplateName = 'rNmHq.render';
 }
 
 exports.render.params = ["page","site"];
@@ -31674,18 +31486,27 @@ return exports;
 
 });
 
-class MmPwp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MmPwp, templates);
+class rNmHq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(rNmHq, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 322 */,
+/* 323 */,
 /* 324 */,
 /* 325 */,
 /* 326 */,
-/* 327 */
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31725,9 +31546,9 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _textSoy = __webpack_require__(323);
+var _paddingSoy = __webpack_require__(321);
 
-var _textSoy2 = _interopRequireDefault(_textSoy);
+var _paddingSoy2 = _interopRequireDefault(_paddingSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31737,23 +31558,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MmPwp = function (_Component) {
-  _inherits(MmPwp, _Component);
+var rNmHq = function (_Component) {
+  _inherits(rNmHq, _Component);
 
-  function MmPwp() {
-    _classCallCheck(this, MmPwp);
+  function rNmHq() {
+    _classCallCheck(this, rNmHq);
 
-    return _possibleConstructorReturn(this, (MmPwp.__proto__ || Object.getPrototypeOf(MmPwp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rNmHq.__proto__ || Object.getPrototypeOf(rNmHq)).apply(this, arguments));
   }
 
-  return MmPwp;
+  return rNmHq;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MmPwp, _textSoy2.default);
+_metalSoy2.default.register(rNmHq, _paddingSoy2.default);
 
-exports.default = MmPwp;
+exports.default = rNmHq;
 
 /***/ })
-],[327]);
+],[334]);

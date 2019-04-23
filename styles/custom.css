@@ -159,7 +159,8 @@ code {
   position: relative;
   z-index: 1;
   padding-top: 120px;
-  background: linear-gradient(135deg, #861294 0%, #52198c 100%); }
+  background: linear-gradient(135deg, #861294 0%, #52198c 100%);
+  text-align: left; }
   .docs .guide-header:before {
     content: "";
     position: absolute;
