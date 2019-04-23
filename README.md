@@ -71,6 +71,6 @@ $max-size: 100; // up to 100px
 
 ## Generate your custom values from this repository
 
-1. Clone this repository;
-2. Run `yarn` to instal dependences;
+1. Clone the <a href="https://github.com/aurumsoftware/nix" target="_blank">Nix repository</a>;
+2. Run `yarn` to install dependencies;
 3. Run `yarn build:nix` to build or `yarn watch:nix` to watch the changes;

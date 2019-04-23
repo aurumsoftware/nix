@@ -92,8 +92,7 @@ $max-size: 100; // up to 100px
 ### Generate your custom values
 
 1. Clone the <a href="https://github.com/aurumsoftware/nix" target="_blank">Nix repository</a>;
-2. Install `gulp-cli`;
-3. Run `yarn` or `npm instal`;
-4. Run `gulp` to build or `gulp watch` to watch the changes;
+2. Run `yarn` to install dependencies;
+3. Run `yarn build:nix` to build or `yarn watch:nix` to watch the changes;
 
 </article>
