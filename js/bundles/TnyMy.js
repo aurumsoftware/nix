@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,13,14,15,16,17],[
+webpackJsonppageComponent([9,13,14,15,16,17],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20471,14 +20471,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param89 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param89}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20503,24 +20503,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn5 = opt_data.page.author;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn6 = opt_data.page.date;
-          if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn7 = opt_data.page.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn8 = opt_data.content;
-      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20542,8 +20542,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy109 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy109, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy23 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20675,8 +20675,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn9 = opt_data.page.title;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn4 = opt_data.page.title;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
           itext(' guide');
         ie_close('h1');
       ie_close('div');
@@ -20689,8 +20689,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn10 = opt_data.content;
-            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+            var dyn5 = opt_data.content;
+            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20839,8 +20839,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title}}, null, opt_ijData);
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('main');
   ie_close('div');
 }
@@ -20973,14 +20973,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn12 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn13 = opt_data.content;
-        if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+        var dyn8 = opt_data.content;
+        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -21005,15 +21005,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy188 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy188.childIds.length) {
+    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy193 = tutorialObject__soy188.children[tutorialObject__soy188.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy193,
+            'href', nextPageUrl__soy107,
             'class', 'btn btn-accent btn-sm');
-          var dyn14 = opt_data.page.buttonTitle;
-          if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+          var dyn9 = opt_data.page.buttonTitle;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
         ie_close('a');
       }
     }
@@ -21058,7 +21058,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s208_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -21067,23 +21067,23 @@ function __deltemplate_s208_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn15 = opt_data.page.weight;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+      var dyn10 = opt_data.page.weight;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn16 = opt_data.page.title;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn11 = opt_data.page.title;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s208_88c0813b = __deltemplate_s208_88c0813b;
+exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s208_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s208_88c0813b';
+  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s208_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21454,30 +21454,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList33 = opt_data.posts;
-        var postListLen33 = postList33.length;
-        for (var postIndex33 = 0; postIndex33 < postListLen33; postIndex33++) {
-          var postData33 = postList33[postIndex33];
+        var postList166 = opt_data.posts;
+        var postListLen166 = postList166.length;
+        for (var postIndex166 = 0; postIndex166 < postListLen166; postIndex166++) {
+          var postData166 = postList166[postIndex166];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData33.url);
+                'href', postData166.url);
               ie_open('small');
                 itext('By ');
-                var dyn0 = postData33.author;
-                if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+                var dyn12 = postData166.author;
+                if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn1 = postData33.date;
-                  if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+                  var dyn13 = postData166.date;
+                  if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn2 = postData33.title;
-                if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+                var dyn14 = postData166.title;
+                if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -21614,7 +21614,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s51_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s184_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -21623,16 +21623,16 @@ function __deltemplate_s51_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn15 = opt_data.page.title;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s51_d34389eb = __deltemplate_s51_d34389eb;
+exports.__deltemplate_s184_d34389eb = __deltemplate_s184_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s51_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s51_d34389eb';
+  __deltemplate_s184_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s184_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s51_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s184_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -21830,8 +21830,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn4 = opt_data.time;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn16 = opt_data.time;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     }
   ie_close('p');
 }
@@ -31240,12 +31240,14 @@ exports.default = parseFromAnchor;
 /* 312 */,
 /* 313 */,
 /* 314 */,
-/* 315 */
+/* 315 */,
+/* 316 */,
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gcHdk", function() { return gcHdk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TnyMy", function() { return TnyMy; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -31257,15 +31259,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from display.soy.
+// This file was automatically generated from float.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gcHdk.
+ * @fileoverview Templates in namespace TnyMy.
  * @public
  */
 
-goog.module('gcHdk.incrementaldom');
+goog.module('TnyMy.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -31299,11 +31301,11 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param274 = function() {
+  var param337 = function() {
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
-        itext('display');
+        itext('float');
       ie_close('h2');
       ie_open('table');
         ie_open('thead');
@@ -31323,116 +31325,115 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_none');
+                itext('.nix-float_none');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('The element is completely removed');
+              itext('The element does not float, (will be displayed just where it occurs in the text).');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_inline');
+                itext('.nix-float_left');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Displays an element as an inline element. Any height and width properties will have no effect');
+              itext('The element floats to the left of its container');
             ie_close('td');
           ie_close('tr');
           ie_open('tr');
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_inline-block');
+                itext('.nix-float_right');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
                 'style', 'text-align:left');
-              itext('Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_block');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Displays an element as a block element. It starts on a new line, and takes up the whole width');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_table');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Let the element behave like a table element');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_table-cell');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Let the element behave like a td element');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_table-row');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Let the element behave like a tr element');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_flex');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Displays an element as a block-level flex container');
-            ie_close('td');
-          ie_close('tr');
-          ie_open('tr');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              ie_open('code');
-                itext('.nix-display_inline-flex');
-              ie_close('code');
-            ie_close('td');
-            ie_open('td', null, null,
-                'style', 'text-align:left');
-              itext('Displays an element as an inline-level flex container');
+              itext('The element floats the right of its container');
             ie_close('td');
           ie_close('tr');
         ie_close('tbody');
       ie_close('table');
-      $templateAlias2({code: '<div class="nix-display_flex"></div>', mode: 'xml'}, null, opt_ijData);
+      $templateAlias2({code: '<div class="nix-float_left"></div>', mode: 'xml'}, null, opt_ijData);
     ie_close('article');
     ie_open('article', null, null,
         'id', '2');
+      ie_open('h2');
+        itext('clear');
+      ie_close('h2');
+      ie_open('table');
+        ie_open('thead');
+          ie_open('tr');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('CLASS');
+            ie_close('th');
+            ie_open('th', null, null,
+                'style', 'text-align:left');
+              itext('DESCRIPTION');
+            ie_close('th');
+          ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_none');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('Allows floating elements on both sides');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_both');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on either the left or the right side');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_left');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on the left side');
+            ie_close('td');
+          ie_close('tr');
+          ie_open('tr');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              ie_open('code');
+                itext('.nix-clear_right');
+              ie_close('code');
+            ie_close('td');
+            ie_open('td', null, null,
+                'style', 'text-align:left');
+              itext('No floating elements allowed on the right side');
+            ie_close('td');
+          ie_close('tr');
+        ie_close('tbody');
+      ie_close('table');
+      $templateAlias2({code: '<div class="nix-clear_both"></div>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
       ie_open('h2');
         itext('Responsive example');
       ie_close('h2');
@@ -31454,7 +31455,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_none--xs');
+                itext('.nix-float_none--xs');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31469,7 +31470,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_block--sm');
+                itext('.nix-clear_left--sm');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31484,7 +31485,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('td', null, null,
                 'style', 'text-align:left');
               ie_open('code');
-                itext('.nix-display_flex--md');
+                itext('.nix-clear_right--md');
               ie_close('code');
             ie_close('td');
             ie_open('td', null, null,
@@ -31507,11 +31508,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param274}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param337}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gcHdk.render';
+  $render.soyTemplateName = 'TnyMy.render';
 }
 
 exports.render.params = ["page","site"];
@@ -31521,16 +31522,14 @@ return exports;
 
 });
 
-class gcHdk extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gcHdk, templates);
+class TnyMy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TnyMy, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 316 */,
-/* 317 */,
 /* 318 */,
 /* 319 */,
 /* 320 */,
@@ -31545,8 +31544,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gcHdk, templates);
 /* 329 */,
 /* 330 */,
 /* 331 */,
-/* 332 */,
-/* 333 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31586,9 +31584,9 @@ __webpack_require__(171);
 
 __webpack_require__(172);
 
-var _displaySoy = __webpack_require__(315);
+var _floatSoy = __webpack_require__(317);
 
-var _displaySoy2 = _interopRequireDefault(_displaySoy);
+var _floatSoy2 = _interopRequireDefault(_floatSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31598,23 +31596,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gcHdk = function (_Component) {
-  _inherits(gcHdk, _Component);
+var TnyMy = function (_Component) {
+  _inherits(TnyMy, _Component);
 
-  function gcHdk() {
-    _classCallCheck(this, gcHdk);
+  function TnyMy() {
+    _classCallCheck(this, TnyMy);
 
-    return _possibleConstructorReturn(this, (gcHdk.__proto__ || Object.getPrototypeOf(gcHdk)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TnyMy.__proto__ || Object.getPrototypeOf(TnyMy)).apply(this, arguments));
   }
 
-  return gcHdk;
+  return TnyMy;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gcHdk, _displaySoy2.default);
+_metalSoy2.default.register(TnyMy, _floatSoy2.default);
 
-exports.default = gcHdk;
+exports.default = TnyMy;
 
 /***/ })
-],[333]);
+],[332]);

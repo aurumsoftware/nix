@@ -17074,8 +17074,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn4 = opt_data.time;
-      if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+      var dyn16 = opt_data.time;
+      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
     }
   ie_close('p');
 }
