@@ -2769,7 +2769,7 @@ electric-base-components@^3.0.2:
     metal-toggler "^2.0.0"
     metal-tooltip "^2.0.3"
 
-electric-cli@^2.2.0:
+electric-cli@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/electric-cli/-/electric-cli-2.4.2.tgz#c6dfa32978e60275349e8bf6490ceb9bf1f18623"
   integrity sha512-/Zfqh9kbnCYVwFvMQrAXsc53FcgaVWdmeyT3lozPy5ZoLNFO1k2rsO8dWjTtH6ys6JRAhJBFb02JImXph1GZgw==
@@ -2784,7 +2784,7 @@ electric-cli@^2.2.0:
     update-notifier "^2.1.0"
     yargs "^6.6.0"
 
-electric-marble-components@^4.0.0:
+electric-marble-components@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/electric-marble-components/-/electric-marble-components-4.0.4.tgz#99bf1f72b34cd1e1d1ac233b8001fdab1fe9339f"
   integrity sha512-OXZTkW9/lilIH37jpjznEbrpVr+QleUNjTkXuG2AY1R5KiP4pw4aeAqTlYga+zvxzIb15lAtNdKzo7YeRn0qyA==
@@ -4372,6 +4372,20 @@ gulp-sass@^3.1.0:
     gulp-util "^3.0"
     lodash.clonedeep "^4.3.2"
     node-sass "^4.8.3"
+    through2 "^2.0.0"
+    vinyl-sourcemaps-apply "^0.2.0"
+
+gulp-sass@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-4.0.2.tgz#cfb1e3eff2bd9852431c7ce87f43880807d8d505"
+  integrity sha512-q8psj4+aDrblJMMtRxihNBdovfzGrXJp1l4JU0Sz4b/Mhsi2DPrKFYCGDwjIWRENs04ELVHxdOJQ7Vs98OFohg==
+  dependencies:
+    chalk "^2.3.0"
+    lodash.clonedeep "^4.3.2"
+    node-sass "^4.8.3"
+    plugin-error "^1.0.1"
+    replace-ext "^1.0.0"
+    strip-ansi "^4.0.0"
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
@@ -6052,7 +6066,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-marble-topbar@^1.0.0:
+marble-topbar@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/marble-topbar/-/marble-topbar-1.6.2.tgz#474217e8492aef2423898e738aaafa3a0eab8cb4"
   integrity sha512-5yCM4y6KavUftY14/IoL31mDMKCcIUaA+Y6sh8j+CYsKJgKRu5ThaYCxJyIlt6wEsXueGUSYRNLTD1w0mf9zbg==
@@ -6063,10 +6077,10 @@ marble-topbar@^1.0.0:
     metal-state "^2.16.0"
     metal-toggler "^3.1.0"
 
-marble@~3.1.3:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/marble/-/marble-3.1.8.tgz#2d4f90e85d74ae1c87d83a2a7c0315d349af5dbe"
-  integrity sha512-ViQ6UcF3DTjalvUK/e3OzY7Y1f+pGX5Zm2f/umk5Z6TTua+w+JAfKMEpv6guZ0rcsRgXN+2n25y458hPNa4TRw==
+marble@~3.5.7:
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/marble/-/marble-3.5.7.tgz#ef5395e39f2aed16fa544b4f1a777c24ef4bf345"
+  integrity sha512-AYO9lkBqS1458I6V+1HTREU/cEamniSg0Opsk1FnZh/FxgXwXyIFuxd7GUrKDentrE3y7401YX/nuipO2B72Dg==
   dependencies:
     bootstrap-sass "^3.3.6"
     mathsass "^0.9.5"
@@ -6701,7 +6715,7 @@ module-deps-sortable@4.0.6:
     through2 "^2.0.0"
     xtend "^4.0.0"
 
-moment@^2.19.2:
+moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -7540,7 +7554,7 @@ plugin-error@^0.1.2:
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
 
-plugin-error@~1.0.x:
+plugin-error@^1.0.1, plugin-error@~1.0.x:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
   integrity sha512-L1zP0dk7vGweZME2i+EeakvUNqSrdiI3F91TwEoYiGrAfUXmVv6fJIq4g82PAXxNsWOp0J7ZqQy/3Szz0ajTxA==
