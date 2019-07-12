@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([15],{
 
-/***/ 171:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _SocialButtonsSoy = __webpack_require__(198);
+var _SocialButtonsSoy = __webpack_require__(158);
 
 var _SocialButtonsSoy2 = _interopRequireDefault(_SocialButtonsSoy);
 
@@ -69,7 +69,7 @@ exports.default = SocialButtons;
 
 /***/ }),
 
-/***/ 198:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,4 +185,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SocialButtons, templa
 
 /***/ })
 
-},[171]);
+},[142]);

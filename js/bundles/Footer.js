@@ -1,7 +1,7 @@
 var pageComponent =
 webpackJsonppageComponent([17],{
 
-/***/ 168:
+/***/ 139:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _FooterSoy = __webpack_require__(195);
+var _FooterSoy = __webpack_require__(155);
 
 var _FooterSoy2 = _interopRequireDefault(_FooterSoy);
 
@@ -69,7 +69,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 195:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -164,4 +164,4 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(Footer, templates);
 
 /***/ })
 
-},[168]);
+},[139]);
