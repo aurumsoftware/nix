@@ -3,6 +3,10 @@
   "version": "0.6.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/aurumsoftware/nix"
+  },
   "scripts": {
     "start": "./node_modules/.bin/electric run",
     "build:docs": "./node_modules/.bin/electric build",
