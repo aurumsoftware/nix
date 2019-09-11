@@ -69,8 +69,11 @@ $max-size: 100; // up to 100px
 
 > `$int-size` is the interval variable to sizes, and `$max-size` is the max size to generate.
 
-## Generate your custom values from this repository
+## Development
+
+Change or update values and features Nix 
 
 1. Clone the <a href="https://github.com/aurumsoftware/nix" target="_blank">Nix repository</a>;
 2. Run `yarn` to install dependencies;
 3. Run `yarn build:nix` to build or `yarn watch:nix` to watch the changes;
+4. Run `yarn start` to up local documentation;
