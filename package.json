@@ -22,14 +22,14 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.0.2",
-    "lodash": "4.17.13",
+    "lodash": "4.17.21",
     "lodash.template": "4.5.0",
     "marble": "~3.5.7",
     "marble-topbar": "^1.6.2",
     "moment": "^2.24.0"
   },
   "resolutions": {
-    "lodash": "4.17.13",
+    "lodash": "4.17.21",
     "lodash.template": "4.5.0"
   }
 }
